@@ -1,0 +1,53 @@
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: ocr-b-std, monospace;
+}
+
+#frame-wrapper {
+  width: 100vmin;
+  height: 100vmin;
+  padding: 5vmin;
+}
+#frame-wrapper #frame {
+  border: solid #FFF 2px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+#frame-wrapper #frame #design {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#frame-wrapper #frame #description-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#frame-wrapper #frame #description-wrapper #description {
+  font-size: 1vmin;
+  color: white;
+}
+
+/*# sourceMappingURL=frame.css.map */

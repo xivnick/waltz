@@ -1,0 +1,413 @@
+#hours {
+  z-index: 2;
+}
+
+#minutes {
+  z-index: 1;
+}
+
+#seconds {
+  z-index: 1;
+}
+
+#hours {
+  border: solid #FFF 2px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  background-color: black;
+}
+#hours .hour-box {
+  border: solid #FFF 2px;
+  transform-origin: 1px calc(100% - 1px);
+  overflow: hidden;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+#hours .hour-box::after {
+  border: solid #FFF 2px;
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: calc(-100% - 4px);
+  width: 100%;
+  height: 100%;
+  transform: rotate(30deg);
+  transform-origin: calc(100% - 1px) calc(100% - 1px);
+  background-color: #000;
+}
+#hours .hour-box.on::after {
+  background-color: var(--color-hour-0);
+}
+#hours .hour-box.h-rot-0 {
+  transform: rotate(0deg);
+}
+#hours .hour-box.h-rot-1 {
+  transform: rotate(30deg);
+}
+#hours .hour-box.h-rot-2 {
+  transform: rotate(60deg);
+}
+#hours .hour-box.h-rot-3 {
+  transform: rotate(90deg);
+}
+#hours .hour-box.h-rot-4 {
+  transform: rotate(120deg);
+}
+#hours .hour-box.h-rot-5 {
+  transform: rotate(150deg);
+}
+#hours .hour-box.h-rot-6 {
+  transform: rotate(180deg);
+}
+#hours .hour-box.h-rot-7 {
+  transform: rotate(210deg);
+}
+#hours .hour-box.h-rot-8 {
+  transform: rotate(240deg);
+}
+#hours .hour-box.h-rot-9 {
+  transform: rotate(270deg);
+}
+#hours .hour-box.h-rot-10 {
+  transform: rotate(300deg);
+}
+#hours .hour-box.h-rot-11 {
+  transform: rotate(330deg);
+}
+
+#minutes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#minutes .minute-box {
+  border: solid #FFF 2px;
+  transform-origin: 1px calc(100% - 1px);
+  overflow: hidden;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+#minutes .minute-box::after {
+  border: solid #FFF 2px;
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: calc(-100% - 4px);
+  width: 100%;
+  height: 100%;
+  transform: rotate(6deg);
+  transform-origin: calc(100% - 1px) calc(100% - 1px);
+  background-color: #000;
+}
+#minutes .minute-box.on::after {
+  background-color: var(--color-minute-0);
+}
+#minutes .minute-box.m-rot-0 {
+  transform: rotate(0deg);
+}
+#minutes .minute-box.m-rot-1 {
+  transform: rotate(6deg);
+}
+#minutes .minute-box.m-rot-2 {
+  transform: rotate(12deg);
+}
+#minutes .minute-box.m-rot-3 {
+  transform: rotate(18deg);
+}
+#minutes .minute-box.m-rot-4 {
+  transform: rotate(24deg);
+}
+#minutes .minute-box.m-rot-5 {
+  transform: rotate(30deg);
+}
+#minutes .minute-box.m-rot-6 {
+  transform: rotate(36deg);
+}
+#minutes .minute-box.m-rot-7 {
+  transform: rotate(42deg);
+}
+#minutes .minute-box.m-rot-8 {
+  transform: rotate(48deg);
+}
+#minutes .minute-box.m-rot-9 {
+  transform: rotate(54deg);
+}
+#minutes .minute-box.m-rot-10 {
+  transform: rotate(60deg);
+}
+#minutes .minute-box.m-rot-11 {
+  transform: rotate(66deg);
+}
+#minutes .minute-box.m-rot-12 {
+  transform: rotate(72deg);
+}
+#minutes .minute-box.m-rot-13 {
+  transform: rotate(78deg);
+}
+#minutes .minute-box.m-rot-14 {
+  transform: rotate(84deg);
+}
+#minutes .minute-box.m-rot-15 {
+  transform: rotate(90deg);
+}
+#minutes .minute-box.m-rot-16 {
+  transform: rotate(96deg);
+}
+#minutes .minute-box.m-rot-17 {
+  transform: rotate(102deg);
+}
+#minutes .minute-box.m-rot-18 {
+  transform: rotate(108deg);
+}
+#minutes .minute-box.m-rot-19 {
+  transform: rotate(114deg);
+}
+#minutes .minute-box.m-rot-20 {
+  transform: rotate(120deg);
+}
+#minutes .minute-box.m-rot-21 {
+  transform: rotate(126deg);
+}
+#minutes .minute-box.m-rot-22 {
+  transform: rotate(132deg);
+}
+#minutes .minute-box.m-rot-23 {
+  transform: rotate(138deg);
+}
+#minutes .minute-box.m-rot-24 {
+  transform: rotate(144deg);
+}
+#minutes .minute-box.m-rot-25 {
+  transform: rotate(150deg);
+}
+#minutes .minute-box.m-rot-26 {
+  transform: rotate(156deg);
+}
+#minutes .minute-box.m-rot-27 {
+  transform: rotate(162deg);
+}
+#minutes .minute-box.m-rot-28 {
+  transform: rotate(168deg);
+}
+#minutes .minute-box.m-rot-29 {
+  transform: rotate(174deg);
+}
+#minutes .minute-box.m-rot-30 {
+  transform: rotate(180deg);
+}
+#minutes .minute-box.m-rot-31 {
+  transform: rotate(186deg);
+}
+#minutes .minute-box.m-rot-32 {
+  transform: rotate(192deg);
+}
+#minutes .minute-box.m-rot-33 {
+  transform: rotate(198deg);
+}
+#minutes .minute-box.m-rot-34 {
+  transform: rotate(204deg);
+}
+#minutes .minute-box.m-rot-35 {
+  transform: rotate(210deg);
+}
+#minutes .minute-box.m-rot-36 {
+  transform: rotate(216deg);
+}
+#minutes .minute-box.m-rot-37 {
+  transform: rotate(222deg);
+}
+#minutes .minute-box.m-rot-38 {
+  transform: rotate(228deg);
+}
+#minutes .minute-box.m-rot-39 {
+  transform: rotate(234deg);
+}
+#minutes .minute-box.m-rot-40 {
+  transform: rotate(240deg);
+}
+#minutes .minute-box.m-rot-41 {
+  transform: rotate(246deg);
+}
+#minutes .minute-box.m-rot-42 {
+  transform: rotate(252deg);
+}
+#minutes .minute-box.m-rot-43 {
+  transform: rotate(258deg);
+}
+#minutes .minute-box.m-rot-44 {
+  transform: rotate(264deg);
+}
+#minutes .minute-box.m-rot-45 {
+  transform: rotate(270deg);
+}
+#minutes .minute-box.m-rot-46 {
+  transform: rotate(276deg);
+}
+#minutes .minute-box.m-rot-47 {
+  transform: rotate(282deg);
+}
+#minutes .minute-box.m-rot-48 {
+  transform: rotate(288deg);
+}
+#minutes .minute-box.m-rot-49 {
+  transform: rotate(294deg);
+}
+#minutes .minute-box.m-rot-50 {
+  transform: rotate(300deg);
+}
+#minutes .minute-box.m-rot-51 {
+  transform: rotate(306deg);
+}
+#minutes .minute-box.m-rot-52 {
+  transform: rotate(312deg);
+}
+#minutes .minute-box.m-rot-53 {
+  transform: rotate(318deg);
+}
+#minutes .minute-box.m-rot-54 {
+  transform: rotate(324deg);
+}
+#minutes .minute-box.m-rot-55 {
+  transform: rotate(330deg);
+}
+#minutes .minute-box.m-rot-56 {
+  transform: rotate(336deg);
+}
+#minutes .minute-box.m-rot-57 {
+  transform: rotate(342deg);
+}
+#minutes .minute-box.m-rot-58 {
+  transform: rotate(348deg);
+}
+#minutes .minute-box.m-rot-59 {
+  transform: rotate(354deg);
+}
+
+#seconds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#seconds .second-box {
+  border: solid #FFF 2px;
+  position: absolute;
+  width: calc(6.25% + 1.875px);
+  height: calc(6.25% + 1.875px);
+  background-color: #000;
+}
+#seconds .second-box.s-row-0 {
+  top: calc(0% - 0px);
+}
+#seconds .second-box.s-col-0 {
+  left: calc(0% - 0px);
+}
+#seconds .second-box.s-row-1 {
+  top: calc(6.25% - 0.125px);
+}
+#seconds .second-box.s-col-1 {
+  left: calc(6.25% - 0.125px);
+}
+#seconds .second-box.s-row-2 {
+  top: calc(12.5% - 0.25px);
+}
+#seconds .second-box.s-col-2 {
+  left: calc(12.5% - 0.25px);
+}
+#seconds .second-box.s-row-3 {
+  top: calc(18.75% - 0.375px);
+}
+#seconds .second-box.s-col-3 {
+  left: calc(18.75% - 0.375px);
+}
+#seconds .second-box.s-row-4 {
+  top: calc(25% - 0.5px);
+}
+#seconds .second-box.s-col-4 {
+  left: calc(25% - 0.5px);
+}
+#seconds .second-box.s-row-5 {
+  top: calc(31.25% - 0.625px);
+}
+#seconds .second-box.s-col-5 {
+  left: calc(31.25% - 0.625px);
+}
+#seconds .second-box.s-row-6 {
+  top: calc(37.5% - 0.75px);
+}
+#seconds .second-box.s-col-6 {
+  left: calc(37.5% - 0.75px);
+}
+#seconds .second-box.s-row-7 {
+  top: calc(43.75% - 0.875px);
+}
+#seconds .second-box.s-col-7 {
+  left: calc(43.75% - 0.875px);
+}
+#seconds .second-box.s-row-8 {
+  top: calc(50% - 1px);
+}
+#seconds .second-box.s-col-8 {
+  left: calc(50% - 1px);
+}
+#seconds .second-box.s-row-9 {
+  top: calc(56.25% - 1.125px);
+}
+#seconds .second-box.s-col-9 {
+  left: calc(56.25% - 1.125px);
+}
+#seconds .second-box.s-row-10 {
+  top: calc(62.5% - 1.25px);
+}
+#seconds .second-box.s-col-10 {
+  left: calc(62.5% - 1.25px);
+}
+#seconds .second-box.s-row-11 {
+  top: calc(68.75% - 1.375px);
+}
+#seconds .second-box.s-col-11 {
+  left: calc(68.75% - 1.375px);
+}
+#seconds .second-box.s-row-12 {
+  top: calc(75% - 1.5px);
+}
+#seconds .second-box.s-col-12 {
+  left: calc(75% - 1.5px);
+}
+#seconds .second-box.s-row-13 {
+  top: calc(81.25% - 1.625px);
+}
+#seconds .second-box.s-col-13 {
+  left: calc(81.25% - 1.625px);
+}
+#seconds .second-box.s-row-14 {
+  top: calc(87.5% - 1.75px);
+}
+#seconds .second-box.s-col-14 {
+  left: calc(87.5% - 1.75px);
+}
+#seconds .second-box.s-row-15 {
+  top: calc(93.75% - 1.875px);
+}
+#seconds .second-box.s-col-15 {
+  left: calc(93.75% - 1.875px);
+}
+#seconds .second-box.on {
+  background-color: var(--color-second-0);
+}
+
+/*# sourceMappingURL=design-a.css.map */
