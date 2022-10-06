@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>waltz SAMPLE</title>
+
+	<link rel="stylesheet" href="https://use.typekit.net/fbc4vah.css">
+
+	<link rel="stylesheet" type="text/css" href="css/frame.css">
+	<link rel="stylesheet" type="text/css" href="css/sample.css">
+</head>
+<body>
+	<div id="frame-wrapper">
+		<div id="frame">
+			<div id="design">
+				<div id="seconds"></div>
+				<div id="clock-wrapper">
+					<div id="clock"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+
+	const seconds = document.querySelector('#seconds');
+	for(let i = 0; i < 10; i++){
+		seconds.innerHTML += `<div class="second-box rot-${i} col-${i}"></div>`;
+	}
+
+	const second_boxes = document.querySelectorAll('.second-box');
+
+	const clear = (cur) => {
+		if(cur === 10) return;
+
+		second_boxes[cur].classList.remove('on');
+
+		setTimeout(() => clear(cur+1), 200);
+	}
+
+	function getTime(){
+	    const time = new Date();
+	    const hour = time.getHours();
+	    const minutes = time.getMinutes();
+	    const seconds = time.getSeconds();
+
+		const clock = document.querySelector('#clock');
+
+	    clock.innerHTML = `${hour<10 ? `0${hour}`:hour}:${minutes<10 ? `0${minutes}`:minutes}:${seconds<10 ? `0${seconds}`:seconds}`;
+
+	    for(let i = 0; i < 10; i++){
+	    	if(i == seconds % 10) second_boxes[i].classList.add('on');
+	    	else second_boxes[i].classList.remove('on');
+	    }
+
+	    // if(seconds % 10 === 0) {
+	    // 	second_boxes[9].classList.add('on');
+
+	    // 	clear(0);
+	    // }
+	}
+
+	getTime(); setInterval(getTime, 1000);
+</script>
+
+<style>
+
+
+</style>
+
+</html>

@@ -4,11 +4,11 @@ const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
 
 for(let i = 0; i < 12; i++){
-	hours.innerHTML += `<div class="hour-box rot-${i}"></div>`;
+	hours.innerHTML += `<div class="hour-box row-${Math.floor(i / 6)} col-${i % 6}"></div>`;
 }
 
 for(let i = 0; i < 60; i++){
-	minutes.innerHTML += `<div class="minute-box rot-${i}"></div>`;
+	minutes.innerHTML += `<div class="minute-box row-${Math.floor(i / 30) * 6 + i % 6} col-${Math.floor(i / 6) % 5} color-${i % 6}"></div>`;
 }
 
 const second_data = [

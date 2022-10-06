@@ -1,0 +1,58 @@
+
+@import "_variables.scss";
+
+#seconds {
+	z-index: 1;
+}
+
+#clock-wrapper {
+	z-index: 2;
+}
+
+#seconds {
+	@include center-square();
+
+	.second-box{
+
+		@include pizza(36deg, #909090, -18deg);
+
+		// @include border;
+		// @include inner-border;
+
+		// width: sizing(10);
+		// height: 100%;
+
+		// @for $i from 0 to 10 {
+		// 	&.col-#{$i} {
+		// 		left: calc( sizing-border(10) * $i );
+		// 	}
+		// }
+
+		// &.on {
+		// 	background-color: #909090;
+		// }
+
+	}
+
+}
+
+#clock-wrapper {
+	@include border;
+	@include center-square(50%);
+
+	background-color: $background-color;
+
+    display: flex;
+    	align-items: center;
+    	justify-content: center;
+
+    #clock{
+    	position: relative !important;
+
+    	height: auto;
+
+    	font-size: 36px;
+		font-family: monospace;
+		color: $border-color;
+    }
+}

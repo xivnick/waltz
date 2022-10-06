@@ -1,0 +1,99 @@
+@media (max-width: 480px) {
+  html {
+    font-size: 1px;
+  }
+}
+@media (min-width: 481px) {
+  html {
+    font-size: 2px;
+  }
+}
+#seconds {
+  z-index: 1;
+}
+
+#clock-wrapper {
+  z-index: 2;
+}
+
+#seconds {
+  top: calc(0% - 1rem);
+  left: calc(0% - 1rem);
+  width: 100%;
+  height: 100%;
+}
+#seconds .second-box {
+  border-left: solid #fff 1rem;
+  bottom: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  width: 100%;
+  height: 100%;
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  overflow: hidden;
+}
+#seconds .second-box.rot-0 {
+  transform: rotate(-18deg);
+}
+#seconds .second-box.rot-1 {
+  transform: rotate(18deg);
+}
+#seconds .second-box.rot-2 {
+  transform: rotate(54deg);
+}
+#seconds .second-box.rot-3 {
+  transform: rotate(90deg);
+}
+#seconds .second-box.rot-4 {
+  transform: rotate(126deg);
+}
+#seconds .second-box.rot-5 {
+  transform: rotate(162deg);
+}
+#seconds .second-box.rot-6 {
+  transform: rotate(198deg);
+}
+#seconds .second-box.rot-7 {
+  transform: rotate(234deg);
+}
+#seconds .second-box.rot-8 {
+  transform: rotate(270deg);
+}
+#seconds .second-box.rot-9 {
+  transform: rotate(306deg);
+}
+#seconds .second-box::after {
+  border: solid #fff 1rem;
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-54deg);
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  background-color: #000;
+}
+#seconds .second-box.on::after {
+  background-color: #909090;
+}
+
+#clock-wrapper {
+  border: solid #fff 1rem;
+  top: calc(25% - 1rem);
+  left: calc(25% - 1rem);
+  width: 50%;
+  height: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#clock-wrapper #clock {
+  position: relative !important;
+  height: auto;
+  font-size: 36px;
+  font-family: monospace;
+  color: #fff;
+}
+
+/*# sourceMappingURL=sample.css.map */

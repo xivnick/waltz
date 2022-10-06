@@ -1,7 +1,127 @@
 
 $background-color: #000;
-$border-color: #FFF;
+$border-color: #fff;
+
+@media (max-width: 480px) {
+	html{
+		font-size: 1px;
+	}
+}
+
+@media (min-width: 481px) {
+	html{
+		font-size: 2px;	
+	}
+}
+
+$border-width: 1rem;
+$border-half-width: 0.5rem;
+
+
+@function color($type, $number: 0) {
+	@return var(--color-#{$type}-#{$number});
+}
+
+@function sizing($n, $ratio: 100%) {
+	@return calc($ratio / $n - $border-width * ( $n - 1 ) / $n);
+}
+
+@function sizing-border($n, $ratio: 100%) {
+	@return calc($ratio / $n - $border-width * ( $n - 1 ) / $n  + $border-width);
+}
 
 @mixin border {
-	border: solid $border-color 2px;
+	border: solid $border-color $border-width;
+}
+
+@mixin border-left {
+	border-left: solid $border-color $border-width;
+}
+
+@mixin inner-border {
+	transform: translate(-$border-width, -$border-width);
+}
+
+@mixin center-square ($ratio: 100%) {
+
+	top: calc(50% - $ratio / 2 - $border-width);
+	left: calc(50% - $ratio / 2 - $border-width);
+
+	width: $ratio;
+	height: $ratio;
+}
+
+@mixin pizza ( $angle, $color, $angle-offset: 0 ) {
+
+	@include border-left;
+
+	bottom: calc(50% - $border-half-width);
+	left: calc(50% - $border-half-width);
+
+	width: 100%;
+	height: 100%;
+
+	transform-origin: $border-half-width calc(100% - $border-half-width);
+	overflow: hidden;
+
+	@for $i from 0 to (360deg / $angle) {
+		&.rot-#{$i} {
+			transform: rotate($angle * $i + $angle-offset);
+		}
+	}	
+
+	&::after {
+		@include border;
+
+		content: "";
+
+		position: absolute;
+		top: - $border-width;
+		left: - $border-width;
+
+		width: 100%;
+		height: 100%;
+
+		transform: rotate( - 90deg + $angle );
+		transform-origin: $border-half-width calc(100% - $border-half-width);
+
+		background-color: $background-color;
+	}
+
+	&.on::after {
+		background-color: $color;
+	}
+}
+
+
+@mixin monopoly-inner($ratio: 100%) {
+
+	left: calc(50% - $ratio / 2 + sizing(16, $ratio));
+	top: calc(50% - $ratio / 2 + sizing(16, $ratio));
+
+	width: calc($ratio - sizing(16, $ratio) * 2 - $border-width * 2);
+	height: calc($ratio - sizing(16, $ratio) * 2 - $border-width * 2);
+
+}
+
+@mixin monopoly ($color) {
+	@include border;
+
+	width: sizing(16);
+	height: sizing(16);
+
+	background-color: $background-color;
+
+	@for $i from 0 to 16 {
+		&.row-#{$i} {
+			top: calc(sizing(16) * $i + $border-width * ( $i - 1 ));
+		}
+		&.col-#{$i} {
+			left: calc(sizing(16) * $i + $border-width * ( $i - 1 ));
+		}
+	}
+
+	&.on {
+		background-color: $color;
+	}
 }

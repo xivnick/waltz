@@ -4,7 +4,7 @@ const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
 
 for(let i = 0; i < 12; i++){
-	hours.innerHTML += `<div class="hour-box rot-${i}"></div>`;
+	hours.innerHTML += `<div class="hour-box level-${i} color-${i % 2}"></div>`;
 }
 
 for(let i = 0; i < 60; i++){
