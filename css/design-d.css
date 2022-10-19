@@ -1,13 +1,3 @@
-@media (max-width: 480px) {
-  html {
-    font-size: 1px;
-  }
-}
-@media (min-width: 481px) {
-  html {
-    font-size: 2px;
-  }
-}
 #hours {
   z-index: 3;
 }

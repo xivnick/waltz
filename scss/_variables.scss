@@ -2,18 +2,6 @@
 $background-color: #000;
 $border-color: #fff;
 
-@media (max-width: 480px) {
-	html{
-		font-size: 1px;
-	}
-}
-
-@media (min-width: 481px) {
-	html{
-		font-size: 2px;	
-	}
-}
-
 $border-width: 1rem;
 $border-half-width: 0.5rem;
 
