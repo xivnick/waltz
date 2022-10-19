@@ -1,0 +1,67 @@
+
+@import "_variables.scss";
+
+
+#hours {
+	@include center-square( calc( sizing(8, calc(100% - sizing-border(16) * 2)) * 2 + $border-width) );
+
+	.hour-box {
+		@include pizza(30deg, color(hour));
+
+		@for $i from 0 to 2 {
+			&.on.color-#{$i}::after{
+				background-color: color(hour, $i);
+			}
+		}
+
+	}
+
+}
+
+#minutes {
+	@include monopoly-inner;
+
+	.minute-box {
+		@include border;
+		@include inner-border;
+
+		width: sizing(8);
+		height: sizing(8);
+
+		@for $i from 0 to 8 {
+			&.row-#{$i} {
+				top: calc( sizing-border(8) * $i );
+			}
+		}
+
+		@for $i from 0 to 8 {
+			&.col-#{$i} {
+				left: calc( sizing-border(8) * $i );
+			}
+		}
+
+		@for $i from 0 to 2 {
+			&.on.color-#{$i}{
+				background-color: color(minute, $i);
+			}
+		}
+
+	}
+
+}
+
+#seconds {
+	@include center-square();
+
+	.second-box {
+		@include monopoly( color(second) );
+
+		@for $i from 0 to 2 {
+			&.on.color-#{$i}{
+				background-color: color(second, $i);
+			}
+		}
+	}
+
+
+}

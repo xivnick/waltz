@@ -1,0 +1,62 @@
+
+@import "_variables.scss";
+
+#hours {
+	z-index: 2;
+}
+
+#minutes {
+	z-index: 3;
+}
+
+#seconds {
+	z-index: 1;
+}
+
+#hours {
+	@include monopoly-inner;
+
+	background-color: $background-color;
+
+	.hour-box {
+		@include pizza(30deg, color(hour));
+	}
+}
+
+#minutes {
+	@include center-square(80%);
+
+	background-color: $background-color;
+
+	.minute-grid {
+		@include border;
+		overflow: hidden;
+
+		@for $i from 0 to 5 {
+			&.level-#{$i}{
+				@include center-square( ($i + 1) * 20% );
+
+				z-index: 5 - $i;
+			}
+		}
+
+		.minute-box {
+			@include pizza(30deg, color(minute));
+
+			@for $i from 0 to 5 {
+				&.on.color-#{$i}::after{
+					background-color: color(minute, $i);
+				}
+			}
+		}
+	}
+
+}
+
+#seconds {
+	@include center-square();
+
+	.second-box {
+		@include pizza(6deg, color(second));
+	}
+}

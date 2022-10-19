@@ -1,0 +1,11 @@
+body{
+	
+	--color-hour-0: #00ff48;
+	--color-hour-1: #ff00f3;
+
+	--color-minute-0: #ff00f3;
+	--color-minute-1: #00ff48;
+
+	--color-second-0: #00ff48;
+	--color-second-1: #ff00f3;
+}

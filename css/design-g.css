@@ -21,14 +21,13 @@
 }
 
 #hours {
-  top: calc(25% - 1rem);
-  left: calc(25% - 1rem);
-  width: 50%;
-  height: 50%;
-  background-color: #000;
+  top: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  height: 75%;
+  border: none !important;
 }
-#hours .hour-box {
-  border-left: solid #fff 1rem;
+#hours .hour-back {
   bottom: calc(50% - 0.5rem);
   left: calc(50% - 0.5rem);
   width: 100%;
@@ -36,56 +35,43 @@
   transform-origin: 0.5rem calc(100% - 0.5rem);
   overflow: hidden;
 }
-#hours .hour-box.rot-0 {
+#hours .hour-back.rot-0 {
   transform: rotate(0deg);
 }
-#hours .hour-box.rot-1 {
-  transform: rotate(30deg);
-}
-#hours .hour-box.rot-2 {
+#hours .hour-back.rot-1 {
   transform: rotate(60deg);
 }
-#hours .hour-box.rot-3 {
-  transform: rotate(90deg);
-}
-#hours .hour-box.rot-4 {
+#hours .hour-back.rot-2 {
   transform: rotate(120deg);
 }
-#hours .hour-box.rot-5 {
-  transform: rotate(150deg);
-}
-#hours .hour-box.rot-6 {
+#hours .hour-back.rot-3 {
   transform: rotate(180deg);
 }
-#hours .hour-box.rot-7 {
-  transform: rotate(210deg);
-}
-#hours .hour-box.rot-8 {
+#hours .hour-back.rot-4 {
   transform: rotate(240deg);
 }
-#hours .hour-box.rot-9 {
-  transform: rotate(270deg);
-}
-#hours .hour-box.rot-10 {
+#hours .hour-back.rot-5 {
   transform: rotate(300deg);
 }
-#hours .hour-box.rot-11 {
-  transform: rotate(330deg);
+#hours .hour-back .triangle {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  transform: rotate(-30deg);
+  overflow: hidden;
 }
-#hours .hour-box::after {
-  border: solid #fff 1rem;
+#hours .hour-back .triangle::after {
+  border-bottom: solid #fff 1rem;
   content: "";
   position: absolute;
   bottom: 0;
-  left: -1rem;
+  left: 0;
   width: 100%;
   height: 100%;
-  transform: rotate(-60deg);
-  transform-origin: 0.5rem calc(100% - 0.5rem);
-  background-color: #000;
-}
-#hours .hour-box.on::after {
-  background-color: var(--color-hour-0);
+  transform-origin: 50% calc(100% - 0.5rem);
+  transform: rotate(240deg);
 }
 
 #minutes {
@@ -411,4 +397,4 @@
   background-color: var(--color-second-0);
 }
 
-/*# sourceMappingURL=design-a.css.map */
+/*# sourceMappingURL=design-g.css.map */

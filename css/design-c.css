@@ -323,7 +323,7 @@
   border: solid #fff 1rem;
   content: "";
   position: absolute;
-  top: -1rem;
+  bottom: 0;
   left: -1rem;
   width: 100%;
   height: 100%;

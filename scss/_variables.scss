@@ -38,6 +38,10 @@ $border-half-width: 0.5rem;
 	border-left: solid $border-color $border-width;
 }
 
+@mixin border-bottom {
+	border-bottom: solid $border-color $border-width;
+}
+
 @mixin inner-border {
 	transform: translate(-$border-width, -$border-width);
 }
@@ -76,7 +80,7 @@ $border-half-width: 0.5rem;
 		content: "";
 
 		position: absolute;
-		top: - $border-width;
+		bottom: 0;
 		left: - $border-width;
 
 		width: 100%;

@@ -11,6 +11,12 @@ html, body, div {
 	box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "ocr-b";
+  src: url("ENOCRB10.ttf") format("truetype");
+  font-weight: normal;
+}
+
 body {
 	width: 100vw;
 	height: 100vh;
@@ -21,7 +27,7 @@ body {
 		justify-content: center;
 		align-items: center;
 
-	font-family: ocr-b-std, monospace;
+	font-family: ocr-b, ocr-b-std, monospace;
 }
 
 #frame-wrapper {

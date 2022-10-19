@@ -1,0 +1,92 @@
+
+@import "_variables.scss";
+
+#hours {
+	z-index: 3;
+}
+
+#minutes {
+	z-index: 2;
+}
+
+#seconds {
+	z-index: 1;
+}
+
+@mixin circle{
+	border-radius: 50%;
+}
+
+#hours {
+	@include center-square(60%);
+	@include circle;
+
+	background-color: $background-color;
+
+	.hour-box {
+		@include border;
+
+		bottom: calc(50% - $border-half-width);
+		left: calc(50% - $border-half-width);
+
+		width: 100%;
+		height: 100%;
+
+		border-radius: 0 100% 0 0;
+		background-color: $background-color;
+
+		transform-origin: $border-half-width calc(100% - $border-half-width);
+
+		@for $i from 0 to 4 {
+			&.rot-#{$i} {
+				transform: rotate(90deg * $i);
+			}
+		}
+
+		@for $i from 0 to 3 {
+			&.level-#{$i} {
+				z-index: 3 - $i;
+				
+				width: calc( ($i + 1) * 50% / 3 );
+				height: calc( ($i + 1) * 50% / 3 );
+			}
+		}
+
+		@for $i from 0 to 2 {
+			&.on.color-#{$i}{
+				background-color: color(minute, $i);
+			}
+		}
+	}
+}
+
+#minutes {
+	@include center-square(80%);
+	@include circle;
+
+	background-color: $background-color;
+
+	.minute-box {
+		@include pizza( 6deg, color(minute));
+
+		@for $i from 0 to 2 {
+			&.on.color-#{$i}::after{
+				background-color: color(minute, $i);
+			}
+		}
+	}
+}
+
+#seconds {
+	@include center-square();
+
+	.second-box {
+		@include pizza( 6deg, color(second));
+
+		@for $i from 0 to 2 {
+			&.on.color-#{$i}::after{
+				background-color: color(second, $i);
+			}
+		}
+	}
+}

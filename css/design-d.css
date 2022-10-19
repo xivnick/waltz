@@ -1,0 +1,511 @@
+@media (max-width: 480px) {
+  html {
+    font-size: 1px;
+  }
+}
+@media (min-width: 481px) {
+  html {
+    font-size: 2px;
+  }
+}
+#hours {
+  z-index: 3;
+}
+
+#minutes {
+  z-index: 2;
+}
+
+#seconds {
+  z-index: 1;
+}
+
+#hours {
+  top: calc(20% - 1rem);
+  left: calc(20% - 1rem);
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: #000;
+}
+#hours .hour-box {
+  border: solid #fff 1rem;
+  bottom: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  width: 100%;
+  height: 100%;
+  border-radius: 0 100% 0 0;
+  background-color: #000;
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+}
+#hours .hour-box.rot-0 {
+  transform: rotate(0deg);
+}
+#hours .hour-box.rot-1 {
+  transform: rotate(90deg);
+}
+#hours .hour-box.rot-2 {
+  transform: rotate(180deg);
+}
+#hours .hour-box.rot-3 {
+  transform: rotate(270deg);
+}
+#hours .hour-box.level-0 {
+  z-index: 3;
+  width: 16.6666666667%;
+  height: 16.6666666667%;
+}
+#hours .hour-box.level-1 {
+  z-index: 2;
+  width: 33.3333333333%;
+  height: 33.3333333333%;
+}
+#hours .hour-box.level-2 {
+  z-index: 1;
+  width: 50%;
+  height: 50%;
+}
+#hours .hour-box.on.color-0 {
+  background-color: var(--color-minute-0);
+}
+#hours .hour-box.on.color-1 {
+  background-color: var(--color-minute-1);
+}
+
+#minutes {
+  top: calc(10% - 1rem);
+  left: calc(10% - 1rem);
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #000;
+}
+#minutes .minute-box {
+  border-left: solid #fff 1rem;
+  bottom: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  width: 100%;
+  height: 100%;
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  overflow: hidden;
+}
+#minutes .minute-box.rot-0 {
+  transform: rotate(0deg);
+}
+#minutes .minute-box.rot-1 {
+  transform: rotate(6deg);
+}
+#minutes .minute-box.rot-2 {
+  transform: rotate(12deg);
+}
+#minutes .minute-box.rot-3 {
+  transform: rotate(18deg);
+}
+#minutes .minute-box.rot-4 {
+  transform: rotate(24deg);
+}
+#minutes .minute-box.rot-5 {
+  transform: rotate(30deg);
+}
+#minutes .minute-box.rot-6 {
+  transform: rotate(36deg);
+}
+#minutes .minute-box.rot-7 {
+  transform: rotate(42deg);
+}
+#minutes .minute-box.rot-8 {
+  transform: rotate(48deg);
+}
+#minutes .minute-box.rot-9 {
+  transform: rotate(54deg);
+}
+#minutes .minute-box.rot-10 {
+  transform: rotate(60deg);
+}
+#minutes .minute-box.rot-11 {
+  transform: rotate(66deg);
+}
+#minutes .minute-box.rot-12 {
+  transform: rotate(72deg);
+}
+#minutes .minute-box.rot-13 {
+  transform: rotate(78deg);
+}
+#minutes .minute-box.rot-14 {
+  transform: rotate(84deg);
+}
+#minutes .minute-box.rot-15 {
+  transform: rotate(90deg);
+}
+#minutes .minute-box.rot-16 {
+  transform: rotate(96deg);
+}
+#minutes .minute-box.rot-17 {
+  transform: rotate(102deg);
+}
+#minutes .minute-box.rot-18 {
+  transform: rotate(108deg);
+}
+#minutes .minute-box.rot-19 {
+  transform: rotate(114deg);
+}
+#minutes .minute-box.rot-20 {
+  transform: rotate(120deg);
+}
+#minutes .minute-box.rot-21 {
+  transform: rotate(126deg);
+}
+#minutes .minute-box.rot-22 {
+  transform: rotate(132deg);
+}
+#minutes .minute-box.rot-23 {
+  transform: rotate(138deg);
+}
+#minutes .minute-box.rot-24 {
+  transform: rotate(144deg);
+}
+#minutes .minute-box.rot-25 {
+  transform: rotate(150deg);
+}
+#minutes .minute-box.rot-26 {
+  transform: rotate(156deg);
+}
+#minutes .minute-box.rot-27 {
+  transform: rotate(162deg);
+}
+#minutes .minute-box.rot-28 {
+  transform: rotate(168deg);
+}
+#minutes .minute-box.rot-29 {
+  transform: rotate(174deg);
+}
+#minutes .minute-box.rot-30 {
+  transform: rotate(180deg);
+}
+#minutes .minute-box.rot-31 {
+  transform: rotate(186deg);
+}
+#minutes .minute-box.rot-32 {
+  transform: rotate(192deg);
+}
+#minutes .minute-box.rot-33 {
+  transform: rotate(198deg);
+}
+#minutes .minute-box.rot-34 {
+  transform: rotate(204deg);
+}
+#minutes .minute-box.rot-35 {
+  transform: rotate(210deg);
+}
+#minutes .minute-box.rot-36 {
+  transform: rotate(216deg);
+}
+#minutes .minute-box.rot-37 {
+  transform: rotate(222deg);
+}
+#minutes .minute-box.rot-38 {
+  transform: rotate(228deg);
+}
+#minutes .minute-box.rot-39 {
+  transform: rotate(234deg);
+}
+#minutes .minute-box.rot-40 {
+  transform: rotate(240deg);
+}
+#minutes .minute-box.rot-41 {
+  transform: rotate(246deg);
+}
+#minutes .minute-box.rot-42 {
+  transform: rotate(252deg);
+}
+#minutes .minute-box.rot-43 {
+  transform: rotate(258deg);
+}
+#minutes .minute-box.rot-44 {
+  transform: rotate(264deg);
+}
+#minutes .minute-box.rot-45 {
+  transform: rotate(270deg);
+}
+#minutes .minute-box.rot-46 {
+  transform: rotate(276deg);
+}
+#minutes .minute-box.rot-47 {
+  transform: rotate(282deg);
+}
+#minutes .minute-box.rot-48 {
+  transform: rotate(288deg);
+}
+#minutes .minute-box.rot-49 {
+  transform: rotate(294deg);
+}
+#minutes .minute-box.rot-50 {
+  transform: rotate(300deg);
+}
+#minutes .minute-box.rot-51 {
+  transform: rotate(306deg);
+}
+#minutes .minute-box.rot-52 {
+  transform: rotate(312deg);
+}
+#minutes .minute-box.rot-53 {
+  transform: rotate(318deg);
+}
+#minutes .minute-box.rot-54 {
+  transform: rotate(324deg);
+}
+#minutes .minute-box.rot-55 {
+  transform: rotate(330deg);
+}
+#minutes .minute-box.rot-56 {
+  transform: rotate(336deg);
+}
+#minutes .minute-box.rot-57 {
+  transform: rotate(342deg);
+}
+#minutes .minute-box.rot-58 {
+  transform: rotate(348deg);
+}
+#minutes .minute-box.rot-59 {
+  transform: rotate(354deg);
+}
+#minutes .minute-box::after {
+  border: solid #fff 1rem;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-84deg);
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  background-color: #000;
+}
+#minutes .minute-box.on::after {
+  background-color: var(--color-minute-0);
+}
+#minutes .minute-box.on.color-0::after {
+  background-color: var(--color-minute-0);
+}
+#minutes .minute-box.on.color-1::after {
+  background-color: var(--color-minute-1);
+}
+
+#seconds {
+  top: calc(0% - 1rem);
+  left: calc(0% - 1rem);
+  width: 100%;
+  height: 100%;
+}
+#seconds .second-box {
+  border-left: solid #fff 1rem;
+  bottom: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  width: 100%;
+  height: 100%;
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  overflow: hidden;
+}
+#seconds .second-box.rot-0 {
+  transform: rotate(0deg);
+}
+#seconds .second-box.rot-1 {
+  transform: rotate(6deg);
+}
+#seconds .second-box.rot-2 {
+  transform: rotate(12deg);
+}
+#seconds .second-box.rot-3 {
+  transform: rotate(18deg);
+}
+#seconds .second-box.rot-4 {
+  transform: rotate(24deg);
+}
+#seconds .second-box.rot-5 {
+  transform: rotate(30deg);
+}
+#seconds .second-box.rot-6 {
+  transform: rotate(36deg);
+}
+#seconds .second-box.rot-7 {
+  transform: rotate(42deg);
+}
+#seconds .second-box.rot-8 {
+  transform: rotate(48deg);
+}
+#seconds .second-box.rot-9 {
+  transform: rotate(54deg);
+}
+#seconds .second-box.rot-10 {
+  transform: rotate(60deg);
+}
+#seconds .second-box.rot-11 {
+  transform: rotate(66deg);
+}
+#seconds .second-box.rot-12 {
+  transform: rotate(72deg);
+}
+#seconds .second-box.rot-13 {
+  transform: rotate(78deg);
+}
+#seconds .second-box.rot-14 {
+  transform: rotate(84deg);
+}
+#seconds .second-box.rot-15 {
+  transform: rotate(90deg);
+}
+#seconds .second-box.rot-16 {
+  transform: rotate(96deg);
+}
+#seconds .second-box.rot-17 {
+  transform: rotate(102deg);
+}
+#seconds .second-box.rot-18 {
+  transform: rotate(108deg);
+}
+#seconds .second-box.rot-19 {
+  transform: rotate(114deg);
+}
+#seconds .second-box.rot-20 {
+  transform: rotate(120deg);
+}
+#seconds .second-box.rot-21 {
+  transform: rotate(126deg);
+}
+#seconds .second-box.rot-22 {
+  transform: rotate(132deg);
+}
+#seconds .second-box.rot-23 {
+  transform: rotate(138deg);
+}
+#seconds .second-box.rot-24 {
+  transform: rotate(144deg);
+}
+#seconds .second-box.rot-25 {
+  transform: rotate(150deg);
+}
+#seconds .second-box.rot-26 {
+  transform: rotate(156deg);
+}
+#seconds .second-box.rot-27 {
+  transform: rotate(162deg);
+}
+#seconds .second-box.rot-28 {
+  transform: rotate(168deg);
+}
+#seconds .second-box.rot-29 {
+  transform: rotate(174deg);
+}
+#seconds .second-box.rot-30 {
+  transform: rotate(180deg);
+}
+#seconds .second-box.rot-31 {
+  transform: rotate(186deg);
+}
+#seconds .second-box.rot-32 {
+  transform: rotate(192deg);
+}
+#seconds .second-box.rot-33 {
+  transform: rotate(198deg);
+}
+#seconds .second-box.rot-34 {
+  transform: rotate(204deg);
+}
+#seconds .second-box.rot-35 {
+  transform: rotate(210deg);
+}
+#seconds .second-box.rot-36 {
+  transform: rotate(216deg);
+}
+#seconds .second-box.rot-37 {
+  transform: rotate(222deg);
+}
+#seconds .second-box.rot-38 {
+  transform: rotate(228deg);
+}
+#seconds .second-box.rot-39 {
+  transform: rotate(234deg);
+}
+#seconds .second-box.rot-40 {
+  transform: rotate(240deg);
+}
+#seconds .second-box.rot-41 {
+  transform: rotate(246deg);
+}
+#seconds .second-box.rot-42 {
+  transform: rotate(252deg);
+}
+#seconds .second-box.rot-43 {
+  transform: rotate(258deg);
+}
+#seconds .second-box.rot-44 {
+  transform: rotate(264deg);
+}
+#seconds .second-box.rot-45 {
+  transform: rotate(270deg);
+}
+#seconds .second-box.rot-46 {
+  transform: rotate(276deg);
+}
+#seconds .second-box.rot-47 {
+  transform: rotate(282deg);
+}
+#seconds .second-box.rot-48 {
+  transform: rotate(288deg);
+}
+#seconds .second-box.rot-49 {
+  transform: rotate(294deg);
+}
+#seconds .second-box.rot-50 {
+  transform: rotate(300deg);
+}
+#seconds .second-box.rot-51 {
+  transform: rotate(306deg);
+}
+#seconds .second-box.rot-52 {
+  transform: rotate(312deg);
+}
+#seconds .second-box.rot-53 {
+  transform: rotate(318deg);
+}
+#seconds .second-box.rot-54 {
+  transform: rotate(324deg);
+}
+#seconds .second-box.rot-55 {
+  transform: rotate(330deg);
+}
+#seconds .second-box.rot-56 {
+  transform: rotate(336deg);
+}
+#seconds .second-box.rot-57 {
+  transform: rotate(342deg);
+}
+#seconds .second-box.rot-58 {
+  transform: rotate(348deg);
+}
+#seconds .second-box.rot-59 {
+  transform: rotate(354deg);
+}
+#seconds .second-box::after {
+  border: solid #fff 1rem;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-84deg);
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  background-color: #000;
+}
+#seconds .second-box.on::after {
+  background-color: var(--color-second-0);
+}
+#seconds .second-box.on.color-0::after {
+  background-color: var(--color-second-0);
+}
+#seconds .second-box.on.color-1::after {
+  background-color: var(--color-second-1);
+}
+
+/*# sourceMappingURL=design-d.css.map */
