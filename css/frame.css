@@ -8,12 +8,12 @@ html, body, div {
   box-sizing: border-box;
 }
 
-@media (max-width: 480px) or (max-height: 480px) {
+@media (max-width: 480px) {
   html {
     font-size: 1px;
   }
 }
-@media (min-width: 481px) and (min-height: 481px) {
+@media (min-width: 481px) {
   html {
     font-size: 2px;
   }
