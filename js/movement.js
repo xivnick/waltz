@@ -36,15 +36,6 @@ const getTimeOffset = (ho = 0, mo = 0, so = 0) => {
 
 const fillTime = (hour, minute, second) => {
 
-	if(hour > 0 && hour_boxes[hour-1].classList.contains('on') ||
-	   minute > 0 && minute_boxes[minute-1].classList.contains('on') ||
-	   second > 0 && second_boxes[second-1].classList.contains('on')) {
-
-		for(let i = hour; i < 12; i++) hour_boxes[i].classList.remove('on');
-		for(let i = minute; i < 60; i++) minute_boxes[i].classList.remove('on');
-		for(let i = second; i < 60; i++) second_boxes[i].classList.remove('on');
-	}
-
 	for(let i = 0; i < hour; i++) hour_boxes[i].classList.add('on');
 	for(let i = 0; i < minute; i++) minute_boxes[i].classList.add('on');
 	for(let i = 0; i < second; i++) second_boxes[i].classList.add('on');
