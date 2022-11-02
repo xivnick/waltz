@@ -1,0 +1,61 @@
+
+@import "_variables.scss";
+
+#hours {
+	z-index: 3;
+}
+
+#minutes {
+	z-index: 2;
+}
+
+#seconds {
+	z-index: 1;
+}
+
+#hours {
+	@include center-square(60%);
+	@include circle;
+
+	background-color: $background-color;
+
+	.hour-box {
+		@include border;
+		@include circle;
+
+		@for $i from 0 to 12 {
+			&.level-#{$i} {
+				@include center-square( ($i + 1) * 100% / 12 );
+
+				z-index: 12 - $i;
+			}
+		}
+
+		&.on {
+			@for $i from 0 to 4 {
+				&.color-#{$i}{
+					background-color: color(hour, $i);
+				}
+			}
+		}
+	}
+}
+
+#minutes {
+	@include center-square(80%);
+	@include circle;
+
+	background-color: $background-color;
+
+	.minute-box {
+		@include pizza( 6deg, color(minute));
+	}
+}
+
+#seconds {
+	@include center-square();
+
+	.second-box {
+		@include pizza( 6deg, color(second));
+	}
+}

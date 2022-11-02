@@ -1,0 +1,20 @@
+body {
+
+  --color-hour-0: #21FFFF;
+  --color-hour-1: #22F1FF;
+  --color-hour-2: #24E1FF;
+  --color-hour-3: #28D1FF;
+  --color-hour-4: #2EC0FF;
+  --color-hour-5: #36B0FF;
+  --color-hour-6: #4992FF;
+  --color-hour-7: #5482FF;
+  --color-hour-8: #6073FF;
+  --color-hour-9: #6B64FF;
+  --color-hour-10: #6B64FF;
+  --color-hour-11: #7856FF;
+
+  --color-minute-0: #9337FF;
+
+  --color-second-0: #EB00FF;
+  
+}

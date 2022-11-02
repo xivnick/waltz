@@ -13,10 +13,6 @@
 	z-index: 1;
 }
 
-@mixin circle{
-	border-radius: 50%;
-}
-
 #hours {
 	@include center-square(60%);
 	@include circle;
