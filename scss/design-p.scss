@@ -1,0 +1,98 @@
+
+@import "_variables.scss";
+
+#hours {
+	z-index: 2;
+}
+
+#minutes {
+	z-index: 1;
+}
+
+#seconds {
+	z-index: 1;
+}
+
+#hours {
+	
+	width: calc(sizing-border(16) * 9 - $border-width);
+	height: calc(sizing-border(16) * 9 - $border-width);
+
+	top: calc(sizing-border(16) * 6 - $border-width);
+	left: calc(sizing-border(16) * 1 - $border-width);
+
+	background-color: $background-color;
+
+	.hour-group {
+
+		transform: translate(-$border-width, $border-width);
+
+		top: 0;
+		right: 0;
+
+		width: 200%;
+		height: 200%;
+
+		.hour-box {
+
+			@include pizza(7.5deg, color(hour));
+		}
+	}
+}
+
+#minutes {
+
+	@include center-square;
+
+	background-color: $background-color;
+
+	.minute-grid {
+		@include border;
+		overflow: hidden;
+
+		@for $i from 0 to 5 {
+
+			&.level-#{$i}{
+				
+				width: calc(sizing-border(16) * (9 + $i + 1) - $border-width);
+				height: calc(sizing-border(16) * (9 + $i + 1) - $border-width);
+
+				top: calc(sizing-border(16) * (6 - $i - 1)  - $border-width);
+				left: calc(sizing-border(16) * 1 - $border-width);
+
+				z-index: 5 - $i;
+			}
+		}
+
+		.minute-group {
+
+			transform: translate(-$border-width, $border-width);
+
+			top: 0;
+			right: 0;
+
+			width: 200%;
+			height: 200%;
+
+			.minute-box {
+				@include pizza(7.5deg, color(minute));
+
+				@for $i from 0 to 5 {
+					&.on.color-#{$i}::after{
+						background-color: color(minute, $i);
+					}
+				}
+			}
+
+		}
+
+	}
+}
+
+#seconds {
+	@include center-square();
+
+	.second-box {
+		@include monopoly( color(second) );
+	}
+}

@@ -1,0 +1,545 @@
+#hours {
+  z-index: 2;
+}
+
+#minutes {
+  z-index: 1;
+}
+
+#seconds {
+  z-index: 1;
+}
+
+#hours {
+  width: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
+  height: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
+  background-color: #000;
+}
+#hours .hour-group {
+  transform: translate(-1rem, 1rem);
+  top: 0;
+  right: 0;
+  width: 200%;
+  height: 200%;
+}
+#hours .hour-group .hour-box {
+  border-left: solid #fff 1rem;
+  bottom: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  width: 100%;
+  height: 100%;
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  overflow: hidden;
+}
+#hours .hour-group .hour-box.rot-0 {
+  transform: rotate(0deg);
+}
+#hours .hour-group .hour-box.rot-1 {
+  transform: rotate(7.5deg);
+}
+#hours .hour-group .hour-box.rot-2 {
+  transform: rotate(15deg);
+}
+#hours .hour-group .hour-box.rot-3 {
+  transform: rotate(22.5deg);
+}
+#hours .hour-group .hour-box.rot-4 {
+  transform: rotate(30deg);
+}
+#hours .hour-group .hour-box.rot-5 {
+  transform: rotate(37.5deg);
+}
+#hours .hour-group .hour-box.rot-6 {
+  transform: rotate(45deg);
+}
+#hours .hour-group .hour-box.rot-7 {
+  transform: rotate(52.5deg);
+}
+#hours .hour-group .hour-box.rot-8 {
+  transform: rotate(60deg);
+}
+#hours .hour-group .hour-box.rot-9 {
+  transform: rotate(67.5deg);
+}
+#hours .hour-group .hour-box.rot-10 {
+  transform: rotate(75deg);
+}
+#hours .hour-group .hour-box.rot-11 {
+  transform: rotate(82.5deg);
+}
+#hours .hour-group .hour-box.rot-12 {
+  transform: rotate(90deg);
+}
+#hours .hour-group .hour-box.rot-13 {
+  transform: rotate(97.5deg);
+}
+#hours .hour-group .hour-box.rot-14 {
+  transform: rotate(105deg);
+}
+#hours .hour-group .hour-box.rot-15 {
+  transform: rotate(112.5deg);
+}
+#hours .hour-group .hour-box.rot-16 {
+  transform: rotate(120deg);
+}
+#hours .hour-group .hour-box.rot-17 {
+  transform: rotate(127.5deg);
+}
+#hours .hour-group .hour-box.rot-18 {
+  transform: rotate(135deg);
+}
+#hours .hour-group .hour-box.rot-19 {
+  transform: rotate(142.5deg);
+}
+#hours .hour-group .hour-box.rot-20 {
+  transform: rotate(150deg);
+}
+#hours .hour-group .hour-box.rot-21 {
+  transform: rotate(157.5deg);
+}
+#hours .hour-group .hour-box.rot-22 {
+  transform: rotate(165deg);
+}
+#hours .hour-group .hour-box.rot-23 {
+  transform: rotate(172.5deg);
+}
+#hours .hour-group .hour-box.rot-24 {
+  transform: rotate(180deg);
+}
+#hours .hour-group .hour-box.rot-25 {
+  transform: rotate(187.5deg);
+}
+#hours .hour-group .hour-box.rot-26 {
+  transform: rotate(195deg);
+}
+#hours .hour-group .hour-box.rot-27 {
+  transform: rotate(202.5deg);
+}
+#hours .hour-group .hour-box.rot-28 {
+  transform: rotate(210deg);
+}
+#hours .hour-group .hour-box.rot-29 {
+  transform: rotate(217.5deg);
+}
+#hours .hour-group .hour-box.rot-30 {
+  transform: rotate(225deg);
+}
+#hours .hour-group .hour-box.rot-31 {
+  transform: rotate(232.5deg);
+}
+#hours .hour-group .hour-box.rot-32 {
+  transform: rotate(240deg);
+}
+#hours .hour-group .hour-box.rot-33 {
+  transform: rotate(247.5deg);
+}
+#hours .hour-group .hour-box.rot-34 {
+  transform: rotate(255deg);
+}
+#hours .hour-group .hour-box.rot-35 {
+  transform: rotate(262.5deg);
+}
+#hours .hour-group .hour-box.rot-36 {
+  transform: rotate(270deg);
+}
+#hours .hour-group .hour-box.rot-37 {
+  transform: rotate(277.5deg);
+}
+#hours .hour-group .hour-box.rot-38 {
+  transform: rotate(285deg);
+}
+#hours .hour-group .hour-box.rot-39 {
+  transform: rotate(292.5deg);
+}
+#hours .hour-group .hour-box.rot-40 {
+  transform: rotate(300deg);
+}
+#hours .hour-group .hour-box.rot-41 {
+  transform: rotate(307.5deg);
+}
+#hours .hour-group .hour-box.rot-42 {
+  transform: rotate(315deg);
+}
+#hours .hour-group .hour-box.rot-43 {
+  transform: rotate(322.5deg);
+}
+#hours .hour-group .hour-box.rot-44 {
+  transform: rotate(330deg);
+}
+#hours .hour-group .hour-box.rot-45 {
+  transform: rotate(337.5deg);
+}
+#hours .hour-group .hour-box.rot-46 {
+  transform: rotate(345deg);
+}
+#hours .hour-group .hour-box.rot-47 {
+  transform: rotate(352.5deg);
+}
+#hours .hour-group .hour-box::after {
+  border: solid #fff 1rem;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-82.5deg);
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  background-color: #000;
+}
+#hours .hour-group .hour-box.on::after {
+  background-color: var(--color-hour-0);
+}
+
+#minutes {
+  top: calc(0% - 1rem);
+  left: calc(0% - 1rem);
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+#minutes .minute-grid {
+  border: solid #fff 1rem;
+  overflow: hidden;
+}
+#minutes .minute-grid.level-0 {
+  width: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
+  height: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
+  z-index: 5;
+}
+#minutes .minute-grid.level-1 {
+  width: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
+  height: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
+  z-index: 4;
+}
+#minutes .minute-grid.level-2 {
+  width: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
+  height: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
+  z-index: 3;
+}
+#minutes .minute-grid.level-3 {
+  width: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
+  height: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
+  z-index: 2;
+}
+#minutes .minute-grid.level-4 {
+  width: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
+  height: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
+  z-index: 1;
+}
+#minutes .minute-grid .minute-group {
+  transform: translate(-1rem, 1rem);
+  top: 0;
+  right: 0;
+  width: 200%;
+  height: 200%;
+}
+#minutes .minute-grid .minute-group .minute-box {
+  border-left: solid #fff 1rem;
+  bottom: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  width: 100%;
+  height: 100%;
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  overflow: hidden;
+}
+#minutes .minute-grid .minute-group .minute-box.rot-0 {
+  transform: rotate(0deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-1 {
+  transform: rotate(7.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-2 {
+  transform: rotate(15deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-3 {
+  transform: rotate(22.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-4 {
+  transform: rotate(30deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-5 {
+  transform: rotate(37.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-6 {
+  transform: rotate(45deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-7 {
+  transform: rotate(52.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-8 {
+  transform: rotate(60deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-9 {
+  transform: rotate(67.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-10 {
+  transform: rotate(75deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-11 {
+  transform: rotate(82.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-12 {
+  transform: rotate(90deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-13 {
+  transform: rotate(97.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-14 {
+  transform: rotate(105deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-15 {
+  transform: rotate(112.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-16 {
+  transform: rotate(120deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-17 {
+  transform: rotate(127.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-18 {
+  transform: rotate(135deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-19 {
+  transform: rotate(142.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-20 {
+  transform: rotate(150deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-21 {
+  transform: rotate(157.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-22 {
+  transform: rotate(165deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-23 {
+  transform: rotate(172.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-24 {
+  transform: rotate(180deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-25 {
+  transform: rotate(187.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-26 {
+  transform: rotate(195deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-27 {
+  transform: rotate(202.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-28 {
+  transform: rotate(210deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-29 {
+  transform: rotate(217.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-30 {
+  transform: rotate(225deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-31 {
+  transform: rotate(232.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-32 {
+  transform: rotate(240deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-33 {
+  transform: rotate(247.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-34 {
+  transform: rotate(255deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-35 {
+  transform: rotate(262.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-36 {
+  transform: rotate(270deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-37 {
+  transform: rotate(277.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-38 {
+  transform: rotate(285deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-39 {
+  transform: rotate(292.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-40 {
+  transform: rotate(300deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-41 {
+  transform: rotate(307.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-42 {
+  transform: rotate(315deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-43 {
+  transform: rotate(322.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-44 {
+  transform: rotate(330deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-45 {
+  transform: rotate(337.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-46 {
+  transform: rotate(345deg);
+}
+#minutes .minute-grid .minute-group .minute-box.rot-47 {
+  transform: rotate(352.5deg);
+}
+#minutes .minute-grid .minute-group .minute-box::after {
+  border: solid #fff 1rem;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-82.5deg);
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  background-color: #000;
+}
+#minutes .minute-grid .minute-group .minute-box.on::after {
+  background-color: var(--color-minute-0);
+}
+#minutes .minute-grid .minute-group .minute-box.on.color-0::after {
+  background-color: var(--color-minute-0);
+}
+#minutes .minute-grid .minute-group .minute-box.on.color-1::after {
+  background-color: var(--color-minute-1);
+}
+#minutes .minute-grid .minute-group .minute-box.on.color-2::after {
+  background-color: var(--color-minute-2);
+}
+#minutes .minute-grid .minute-group .minute-box.on.color-3::after {
+  background-color: var(--color-minute-3);
+}
+#minutes .minute-grid .minute-group .minute-box.on.color-4::after {
+  background-color: var(--color-minute-4);
+}
+
+#seconds {
+  top: calc(0% - 1rem);
+  left: calc(0% - 1rem);
+  width: 100%;
+  height: 100%;
+}
+#seconds .second-box {
+  border: solid #fff 1rem;
+  width: calc(6.25% - 0.9375rem);
+  height: calc(6.25% - 0.9375rem);
+  background-color: #000;
+}
+#seconds .second-box.row-0 {
+  top: calc((6.25% - 0.9375rem) * 0 - 1rem);
+}
+#seconds .second-box.col-0 {
+  left: calc((6.25% - 0.9375rem) * 0 - 1rem);
+}
+#seconds .second-box.row-1 {
+  top: calc((6.25% - 0.9375rem) * 1 + 0rem);
+}
+#seconds .second-box.col-1 {
+  left: calc((6.25% - 0.9375rem) * 1 + 0rem);
+}
+#seconds .second-box.row-2 {
+  top: calc((6.25% - 0.9375rem) * 2 + 1rem);
+}
+#seconds .second-box.col-2 {
+  left: calc((6.25% - 0.9375rem) * 2 + 1rem);
+}
+#seconds .second-box.row-3 {
+  top: calc((6.25% - 0.9375rem) * 3 + 2rem);
+}
+#seconds .second-box.col-3 {
+  left: calc((6.25% - 0.9375rem) * 3 + 2rem);
+}
+#seconds .second-box.row-4 {
+  top: calc((6.25% - 0.9375rem) * 4 + 3rem);
+}
+#seconds .second-box.col-4 {
+  left: calc((6.25% - 0.9375rem) * 4 + 3rem);
+}
+#seconds .second-box.row-5 {
+  top: calc((6.25% - 0.9375rem) * 5 + 4rem);
+}
+#seconds .second-box.col-5 {
+  left: calc((6.25% - 0.9375rem) * 5 + 4rem);
+}
+#seconds .second-box.row-6 {
+  top: calc((6.25% - 0.9375rem) * 6 + 5rem);
+}
+#seconds .second-box.col-6 {
+  left: calc((6.25% - 0.9375rem) * 6 + 5rem);
+}
+#seconds .second-box.row-7 {
+  top: calc((6.25% - 0.9375rem) * 7 + 6rem);
+}
+#seconds .second-box.col-7 {
+  left: calc((6.25% - 0.9375rem) * 7 + 6rem);
+}
+#seconds .second-box.row-8 {
+  top: calc((6.25% - 0.9375rem) * 8 + 7rem);
+}
+#seconds .second-box.col-8 {
+  left: calc((6.25% - 0.9375rem) * 8 + 7rem);
+}
+#seconds .second-box.row-9 {
+  top: calc((6.25% - 0.9375rem) * 9 + 8rem);
+}
+#seconds .second-box.col-9 {
+  left: calc((6.25% - 0.9375rem) * 9 + 8rem);
+}
+#seconds .second-box.row-10 {
+  top: calc((6.25% - 0.9375rem) * 10 + 9rem);
+}
+#seconds .second-box.col-10 {
+  left: calc((6.25% - 0.9375rem) * 10 + 9rem);
+}
+#seconds .second-box.row-11 {
+  top: calc((6.25% - 0.9375rem) * 11 + 10rem);
+}
+#seconds .second-box.col-11 {
+  left: calc((6.25% - 0.9375rem) * 11 + 10rem);
+}
+#seconds .second-box.row-12 {
+  top: calc((6.25% - 0.9375rem) * 12 + 11rem);
+}
+#seconds .second-box.col-12 {
+  left: calc((6.25% - 0.9375rem) * 12 + 11rem);
+}
+#seconds .second-box.row-13 {
+  top: calc((6.25% - 0.9375rem) * 13 + 12rem);
+}
+#seconds .second-box.col-13 {
+  left: calc((6.25% - 0.9375rem) * 13 + 12rem);
+}
+#seconds .second-box.row-14 {
+  top: calc((6.25% - 0.9375rem) * 14 + 13rem);
+}
+#seconds .second-box.col-14 {
+  left: calc((6.25% - 0.9375rem) * 14 + 13rem);
+}
+#seconds .second-box.row-15 {
+  top: calc((6.25% - 0.9375rem) * 15 + 14rem);
+}
+#seconds .second-box.col-15 {
+  left: calc((6.25% - 0.9375rem) * 15 + 14rem);
+}
+#seconds .second-box.on {
+  background-color: var(--color-second-0);
+}
+
+/*# sourceMappingURL=design-p.css.map */

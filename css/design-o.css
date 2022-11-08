@@ -1,0 +1,343 @@
+#hours {
+  top: calc(0% - 1rem);
+  left: calc(0% - 1rem);
+  width: 100%;
+  height: 100%;
+}
+#hours .hour-box {
+  border: solid #fff 1rem;
+  transform: translate(-1rem, -1rem);
+  width: calc(16.6666666667% - 0.8333333333rem);
+  height: calc(16.6666666667% - 0.8333333333rem);
+}
+#hours .hour-box.row-0 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 0);
+}
+#hours .hour-box.row-1 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 1);
+}
+#hours .hour-box.row-2 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 2);
+}
+#hours .hour-box.row-3 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 3);
+}
+#hours .hour-box.row-4 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 4);
+}
+#hours .hour-box.row-5 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 5);
+}
+#hours .hour-box.col-0 {
+  left: calc((16.6666666667% - 0.8333333333rem + 1rem) * 0 + 33.3333333333% - 0.6666666667rem + 1rem);
+}
+#hours .hour-box.col-1 {
+  left: calc((16.6666666667% - 0.8333333333rem + 1rem) * 1 + 33.3333333333% - 0.6666666667rem + 1rem);
+}
+#hours .hour-box.col-2 {
+  left: calc((16.6666666667% - 0.8333333333rem + 1rem) * 2 + 33.3333333333% - 0.6666666667rem + 1rem);
+}
+#hours .hour-box.col-3 {
+  left: calc((16.6666666667% - 0.8333333333rem + 1rem) * 3 + 33.3333333333% - 0.6666666667rem + 1rem);
+}
+#hours .hour-box.col-4 {
+  left: calc((16.6666666667% - 0.8333333333rem + 1rem) * 4 + 33.3333333333% - 0.6666666667rem + 1rem);
+}
+#hours .hour-box.col-5 {
+  left: calc((16.6666666667% - 0.8333333333rem + 1rem) * 5 + 33.3333333333% - 0.6666666667rem + 1rem);
+}
+#hours .hour-box.on {
+  background-color: var(--color-hour-0);
+}
+
+#minutes {
+  top: calc(0% - 1rem);
+  left: calc(0% - 1rem);
+  width: 100%;
+  height: 100%;
+}
+#minutes .minute-box {
+  border: solid #fff 1rem;
+  transform: translate(-1rem, -1rem);
+  width: calc(3.3333333333% - 0.9666666667rem);
+  height: calc(16.6666666667% - 0.8333333333rem);
+}
+#minutes .minute-box.row-0 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 0);
+}
+#minutes .minute-box.row-1 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 1);
+}
+#minutes .minute-box.row-2 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 2);
+}
+#minutes .minute-box.row-3 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 3);
+}
+#minutes .minute-box.row-4 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 4);
+}
+#minutes .minute-box.row-5 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 5);
+}
+#minutes .minute-box.row-6 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 6);
+}
+#minutes .minute-box.row-7 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 7);
+}
+#minutes .minute-box.row-8 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 8);
+}
+#minutes .minute-box.row-9 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 9);
+}
+#minutes .minute-box.row-10 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 10);
+}
+#minutes .minute-box.row-11 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 11);
+}
+#minutes .minute-box.row-12 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 12);
+}
+#minutes .minute-box.row-13 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 13);
+}
+#minutes .minute-box.row-14 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 14);
+}
+#minutes .minute-box.row-15 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 15);
+}
+#minutes .minute-box.row-16 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 16);
+}
+#minutes .minute-box.row-17 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 17);
+}
+#minutes .minute-box.row-18 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 18);
+}
+#minutes .minute-box.row-19 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 19);
+}
+#minutes .minute-box.row-20 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 20);
+}
+#minutes .minute-box.row-21 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 21);
+}
+#minutes .minute-box.row-22 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 22);
+}
+#minutes .minute-box.row-23 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 23);
+}
+#minutes .minute-box.row-24 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 24);
+}
+#minutes .minute-box.row-25 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 25);
+}
+#minutes .minute-box.row-26 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 26);
+}
+#minutes .minute-box.row-27 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 27);
+}
+#minutes .minute-box.row-28 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 28);
+}
+#minutes .minute-box.row-29 {
+  top: calc((16.6666666667% - 0.8333333333rem + 1rem) * 29);
+}
+#minutes .minute-box.col-0 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 0 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-1 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 1 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-2 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 2 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-3 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 3 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-4 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 4 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-5 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 5 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-5 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 5 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.col-6 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 6 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-6 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 6 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.col-7 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 7 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-7 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 7 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.col-8 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 8 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-8 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 8 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.col-9 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 9 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-9 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 9 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.col-10 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 10 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-10 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 10 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.col-11 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 11 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-11 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 11 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.col-12 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 12 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-12 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 12 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.col-13 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 13 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-13 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 13 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.col-14 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 14 + 16.6666666667% - 0.8333333333rem + 1rem);
+}
+#minutes .minute-box.col-14 {
+  left: calc((3.3333333333% - 0.9666666667rem + 1rem) * 14 + 50% - 0.5rem + 1rem);
+}
+#minutes .minute-box.on {
+  background-color: var(--color-minute-0);
+}
+
+#seconds {
+  top: calc(0% - 1rem);
+  left: calc(0% - 1rem);
+  width: 100%;
+  height: 100%;
+}
+#seconds .second-box {
+  border: solid #fff 1rem;
+  transform: translate(-1rem, -1rem);
+  width: calc(16.6666666667% - 0.8333333333rem);
+  height: calc(3.3333333333% - 0.9666666667rem);
+}
+#seconds .second-box.col-1 {
+  left: calc((16.6666666667% - 0.8333333333rem + 1rem) * 5);
+}
+#seconds .second-box.row-0 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 0);
+}
+#seconds .second-box.row-1 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 1);
+}
+#seconds .second-box.row-2 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 2);
+}
+#seconds .second-box.row-3 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 3);
+}
+#seconds .second-box.row-4 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 4);
+}
+#seconds .second-box.row-5 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 5);
+}
+#seconds .second-box.row-6 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 6);
+}
+#seconds .second-box.row-7 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 7);
+}
+#seconds .second-box.row-8 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 8);
+}
+#seconds .second-box.row-9 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 9);
+}
+#seconds .second-box.row-10 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 10);
+}
+#seconds .second-box.row-11 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 11);
+}
+#seconds .second-box.row-12 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 12);
+}
+#seconds .second-box.row-13 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 13);
+}
+#seconds .second-box.row-14 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 14);
+}
+#seconds .second-box.row-15 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 15);
+}
+#seconds .second-box.row-16 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 16);
+}
+#seconds .second-box.row-17 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 17);
+}
+#seconds .second-box.row-18 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 18);
+}
+#seconds .second-box.row-19 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 19);
+}
+#seconds .second-box.row-20 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 20);
+}
+#seconds .second-box.row-21 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 21);
+}
+#seconds .second-box.row-22 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 22);
+}
+#seconds .second-box.row-23 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 23);
+}
+#seconds .second-box.row-24 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 24);
+}
+#seconds .second-box.row-25 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 25);
+}
+#seconds .second-box.row-26 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 26);
+}
+#seconds .second-box.row-27 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 27);
+}
+#seconds .second-box.row-28 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 28);
+}
+#seconds .second-box.row-29 {
+  top: calc((3.3333333333% - 0.9666666667rem + 1rem) * 29);
+}
+#seconds .second-box.on {
+  background-color: var(--color-second-0);
+}
+
+/*# sourceMappingURL=design-o.css.map */

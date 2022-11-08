@@ -1,0 +1,96 @@
+
+@import "_variables.scss";
+
+#hours {
+
+	@include center-square();
+
+	.hour-box {
+		@include border;
+		@include inner-border;
+
+		width: sizing(6);
+		height: sizing(6);
+
+		@for $i from 0 to 6 {
+			&.row-#{$i} {
+				top: calc( sizing-border(6) * $i );
+			}
+		}
+
+		@for $i from 0 to 6 {
+			&.col-#{$i} {
+				left: calc( sizing-border(6) * $i + sizing-border(3) );
+			}
+		}
+
+		&.on {
+			background-color: color(hour);
+		}
+
+	}
+}
+
+#minutes {
+
+	@include center-square();
+
+	.minute-box {
+		@include border;
+		@include inner-border;
+
+		width: sizing(30);
+		height: sizing(6);
+
+		@for $i from 0 to 30 {
+			&.row-#{$i} {
+				top: calc( sizing-border(6) * $i );
+			}
+		}
+
+		@for $i from 0 to 15 {
+			&.col-#{$i} {
+				left: calc( sizing-border(30) * $i + sizing-border(6) );
+			}
+			@if $i >= 5 {
+				&.col-#{$i} {
+					left: calc( sizing-border(30) * $i + sizing-border(2) );
+				}
+			}
+		}
+
+		&.on {
+			background-color: color(minute);
+		}
+
+	}
+}
+
+#seconds {
+
+	@include center-square();
+
+	.second-box {
+		@include border;
+		@include inner-border;
+
+		width: sizing(6);
+		height: sizing(30);
+
+		&.col-1 {
+			left: calc(sizing-border(6) * 5);
+		}
+
+		@for $i from 0 to 30 {
+			&.row-#{$i} {
+				top: calc( sizing-border(30) * $i );
+			}
+		}
+
+		&.on {
+			background-color: color(second);
+		}
+
+	}
+
+}
