@@ -1,0 +1,102 @@
+
+@import "_variables.scss";
+
+#hours {
+	z-index: 1;
+}
+
+#minutes {
+	z-index: 2;
+}
+
+#seconds {
+	z-index: 1;
+}
+
+
+#hours {
+	@include center-square( calc(sizing(8) + sizing-border(8)) );
+
+	.hour-box {
+		@include pizza(30deg, color(hour));
+
+		@for $i from 0 to 2 {
+			&.on::after{
+				background-color: color(hour);
+			}
+		}
+
+	}
+
+}
+
+#minutes {
+	@include center-square;
+
+	.minute-box {
+		@include border;
+		@include inner-border;
+
+		width: calc(sizing(8) * 0.5);
+		height: calc(sizing(8) * 0.5);
+
+		border-radius: 50%;
+		
+		background-color: $background-color;
+
+		@for $i from 0 to 8 {
+			&.row-#{$i} {
+				top: calc( sizing-border(8) * $i + sizing(8) * 0.25 );
+			}
+		}
+
+		@for $i from 0 to 8 {
+			&.col-#{$i} {
+				left: calc( sizing-border(8) * $i + sizing(8) * 0.25 );
+			}
+		}
+
+
+		&.on {
+			background-color: color(minute);
+		}
+
+	}
+
+}
+
+#seconds {
+	@include center-square;
+
+	.second-box {
+		@include border;
+		@include inner-border;
+
+		width: sizing(8);
+		height: sizing(8);
+
+		@for $i from 0 to 8 {
+			&.row-#{$i} {
+				top: calc( sizing-border(8) * $i );
+			}
+		}
+
+		@for $i from 0 to 8 {
+			&.col-#{$i} {
+				left: calc( sizing-border(8) * $i );
+			}
+		}
+
+		@for $i from 0 to 2 {
+			&.on.color-#{$i}{
+				background-color: color(minute, $i);
+			}
+		}
+
+		&.on {
+			background-color: color(second);
+		}
+	}
+
+
+}
