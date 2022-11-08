@@ -110,10 +110,10 @@ $border-half-width: 0.5rem;
 
 	@for $i from 0 to 16 {
 		&.row-#{$i} {
-			top: calc(sizing(16) * $i + $border-width * ( $i - 1 ));
+			top: calc(sizing-border(16) * $i - $border-width);
 		}
 		&.col-#{$i} {
-			left: calc(sizing(16) * $i + $border-width * ( $i - 1 ));
+			left: calc(sizing-border(16) * $i - $border-width);
 		}
 	}
 

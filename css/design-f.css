@@ -151,100 +151,100 @@
   background-color: #000;
 }
 #seconds .second-box.row-0 {
-  top: calc((6.25% - 0.9375rem) * 0 - 1rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
 }
 #seconds .second-box.col-0 {
-  left: calc((6.25% - 0.9375rem) * 0 - 1rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
 }
 #seconds .second-box.row-1 {
-  top: calc((6.25% - 0.9375rem) * 1 + 0rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
 }
 #seconds .second-box.col-1 {
-  left: calc((6.25% - 0.9375rem) * 1 + 0rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
 }
 #seconds .second-box.row-2 {
-  top: calc((6.25% - 0.9375rem) * 2 + 1rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
 }
 #seconds .second-box.col-2 {
-  left: calc((6.25% - 0.9375rem) * 2 + 1rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
 }
 #seconds .second-box.row-3 {
-  top: calc((6.25% - 0.9375rem) * 3 + 2rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
 }
 #seconds .second-box.col-3 {
-  left: calc((6.25% - 0.9375rem) * 3 + 2rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
 }
 #seconds .second-box.row-4 {
-  top: calc((6.25% - 0.9375rem) * 4 + 3rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
 }
 #seconds .second-box.col-4 {
-  left: calc((6.25% - 0.9375rem) * 4 + 3rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
 }
 #seconds .second-box.row-5 {
-  top: calc((6.25% - 0.9375rem) * 5 + 4rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
 }
 #seconds .second-box.col-5 {
-  left: calc((6.25% - 0.9375rem) * 5 + 4rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
 }
 #seconds .second-box.row-6 {
-  top: calc((6.25% - 0.9375rem) * 6 + 5rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
 }
 #seconds .second-box.col-6 {
-  left: calc((6.25% - 0.9375rem) * 6 + 5rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
 }
 #seconds .second-box.row-7 {
-  top: calc((6.25% - 0.9375rem) * 7 + 6rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
 }
 #seconds .second-box.col-7 {
-  left: calc((6.25% - 0.9375rem) * 7 + 6rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
 }
 #seconds .second-box.row-8 {
-  top: calc((6.25% - 0.9375rem) * 8 + 7rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
 }
 #seconds .second-box.col-8 {
-  left: calc((6.25% - 0.9375rem) * 8 + 7rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
 }
 #seconds .second-box.row-9 {
-  top: calc((6.25% - 0.9375rem) * 9 + 8rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
 }
 #seconds .second-box.col-9 {
-  left: calc((6.25% - 0.9375rem) * 9 + 8rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
 }
 #seconds .second-box.row-10 {
-  top: calc((6.25% - 0.9375rem) * 10 + 9rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
 }
 #seconds .second-box.col-10 {
-  left: calc((6.25% - 0.9375rem) * 10 + 9rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
 }
 #seconds .second-box.row-11 {
-  top: calc((6.25% - 0.9375rem) * 11 + 10rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
 }
 #seconds .second-box.col-11 {
-  left: calc((6.25% - 0.9375rem) * 11 + 10rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
 }
 #seconds .second-box.row-12 {
-  top: calc((6.25% - 0.9375rem) * 12 + 11rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
 }
 #seconds .second-box.col-12 {
-  left: calc((6.25% - 0.9375rem) * 12 + 11rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
 }
 #seconds .second-box.row-13 {
-  top: calc((6.25% - 0.9375rem) * 13 + 12rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
 }
 #seconds .second-box.col-13 {
-  left: calc((6.25% - 0.9375rem) * 13 + 12rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
 }
 #seconds .second-box.row-14 {
-  top: calc((6.25% - 0.9375rem) * 14 + 13rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
 }
 #seconds .second-box.col-14 {
-  left: calc((6.25% - 0.9375rem) * 14 + 13rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
 }
 #seconds .second-box.row-15 {
-  top: calc((6.25% - 0.9375rem) * 15 + 14rem);
+  top: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
 }
 #seconds .second-box.col-15 {
-  left: calc((6.25% - 0.9375rem) * 15 + 14rem);
+  left: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
 }
 #seconds .second-box.on {
   background-color: var(--color-second-0);
