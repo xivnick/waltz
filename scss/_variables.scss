@@ -5,6 +5,9 @@ $border-color: #fff;
 $border-width: 1rem;
 $border-half-width: 0.5rem;
 
+$sqrt2: 1.41421356237;
+$sqrt3: 1.73205080757;
+$tan36: 0.726542528;
 
 @function color($type, $number: 0) {
 	@return var(--color-#{$type}-#{$number});
