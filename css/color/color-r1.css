@@ -1,0 +1,24 @@
+body{
+
+  --color-hour-0: #36b0ff;
+  --color-hour-1: #2ec0ff;
+  --color-hour-2: #28d1ff;
+  --color-hour-3: #24e1ff;
+  --color-hour-4: #22f1ff;
+  --color-hour-5: #21ffff;
+
+  --color-minute-0: #f4d9ff;
+  --color-minute-1: #edc2ff;
+  --color-minute-2: #e6abff;
+  --color-minute-3: #e094ff;
+  --color-minute-4: #d97dff;
+  --color-minute-5: #d266ff;
+
+  --color-second-0: #d266ff;
+  --color-second-0: #d97dff;
+  --color-second-0: #e094ff;
+  --color-second-0: #e6abff;
+  --color-second-0: #edc2ff;
+  --color-second-0: #f4d9ff;
+
+}
