@@ -24,6 +24,8 @@
 		@include border;
 		@include circle;
 
+		background-color: $background-color;
+
 		@for $i from 0 to 12 {
 			&.level-#{$i} {
 				@include center-square( ($i + 1) * 100% / 12 );

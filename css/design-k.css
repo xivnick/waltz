@@ -18,6 +18,7 @@
 .k #hours .hour-box {
   border: solid #fff 1rem;
   border-radius: 50%;
+  background-color: #000;
 }
 .k #hours .hour-box.level-0 {
   top: calc(45.8333333333% - 1rem);

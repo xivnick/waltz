@@ -6,6 +6,7 @@
 }
 .i #hours .hour-box {
   border: solid #fff 1rem;
+  background: #000;
 }
 .i #hours .hour-box.level-0 {
   width: 38.8888888889%;
