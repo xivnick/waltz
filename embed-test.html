@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>waltz TEST</title>
+</head>
+<body>
+	<div id="cover" style="width: 100%; height: 100%; position: absolute; z-index: 10;" onclick="add();"></div>
+	<div id="frame-wrapper">
+		<div id="frame">
+			<div id="design">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="description-wrapper">
+				<span id="description">
+					COPYRIGHT (C) 2022 WALTZ MOVEMENT / DESIGNED BY DHL / CODE.E:11222; / EDITION NO. 1/40 2022-12-01 AM 0:00
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	
+const hours = document.querySelector('#hours');
+const minutes = document.querySelector('#minutes');
+const seconds = document.querySelector('#seconds');
+
+hours.innerHTML = "<div class=\"hour-box rot-0\"></div><div class=\"hour-box rot-1\"></div><div class=\"hour-box rot-2\"></div><div class=\"hour-box rot-3\"></div><div class=\"hour-box rot-4\"></div><div class=\"hour-box rot-5\"></div><div class=\"hour-box rot-6\"></div><div class=\"hour-box rot-7\"></div><div class=\"hour-box rot-8\"></div><div class=\"hour-box rot-9\"></div><div class=\"hour-box rot-10\"></div><div class=\"hour-box rot-11\"></div>";
+
+minutes.innerHTML = "<div class=\"minute-box rot-0\"></div><div class=\"minute-box rot-1\"></div><div class=\"minute-box rot-2\"></div><div class=\"minute-box rot-3\"></div><div class=\"minute-box rot-4\"></div><div class=\"minute-box rot-5\"></div><div class=\"minute-box rot-6\"></div><div class=\"minute-box rot-7\"></div><div class=\"minute-box rot-8\"></div><div class=\"minute-box rot-9\"></div><div class=\"minute-box rot-10\"></div><div class=\"minute-box rot-11\"></div><div class=\"minute-box rot-12\"></div><div class=\"minute-box rot-13\"></div><div class=\"minute-box rot-14\"></div><div class=\"minute-box rot-15\"></div><div class=\"minute-box rot-16\"></div><div class=\"minute-box rot-17\"></div><div class=\"minute-box rot-18\"></div><div class=\"minute-box rot-19\"></div><div class=\"minute-box rot-20\"></div><div class=\"minute-box rot-21\"></div><div class=\"minute-box rot-22\"></div><div class=\"minute-box rot-23\"></div><div class=\"minute-box rot-24\"></div><div class=\"minute-box rot-25\"></div><div class=\"minute-box rot-26\"></div><div class=\"minute-box rot-27\"></div><div class=\"minute-box rot-28\"></div><div class=\"minute-box rot-29\"></div><div class=\"minute-box rot-30\"></div><div class=\"minute-box rot-31\"></div><div class=\"minute-box rot-32\"></div><div class=\"minute-box rot-33\"></div><div class=\"minute-box rot-34\"></div><div class=\"minute-box rot-35\"></div><div class=\"minute-box rot-36\"></div><div class=\"minute-box rot-37\"></div><div class=\"minute-box rot-38\"></div><div class=\"minute-box rot-39\"></div><div class=\"minute-box rot-40\"></div><div class=\"minute-box rot-41\"></div><div class=\"minute-box rot-42\"></div><div class=\"minute-box rot-43\"></div><div class=\"minute-box rot-44\"></div><div class=\"minute-box rot-45\"></div><div class=\"minute-box rot-46\"></div><div class=\"minute-box rot-47\"></div><div class=\"minute-box rot-48\"></div><div class=\"minute-box rot-49\"></div><div class=\"minute-box rot-50\"></div><div class=\"minute-box rot-51\"></div><div class=\"minute-box rot-52\"></div><div class=\"minute-box rot-53\"></div><div class=\"minute-box rot-54\"></div><div class=\"minute-box rot-55\"></div><div class=\"minute-box rot-56\"></div><div class=\"minute-box rot-57\"></div><div class=\"minute-box rot-58\"></div><div class=\"minute-box rot-59\"></div>"
+
+seconds.innerHTML = "<div class=\"second-box row-0 col-8\"></div><div class=\"second-box row-0 col-9\"></div><div class=\"second-box row-0 col-10\"></div><div class=\"second-box row-0 col-11\"></div><div class=\"second-box row-0 col-12\"></div><div class=\"second-box row-0 col-13\"></div><div class=\"second-box row-0 col-14\"></div><div class=\"second-box row-0 col-15\"></div><div class=\"second-box row-1 col-15\"></div><div class=\"second-box row-2 col-15\"></div><div class=\"second-box row-3 col-15\"></div><div class=\"second-box row-4 col-15\"></div><div class=\"second-box row-5 col-15\"></div><div class=\"second-box row-6 col-15\"></div><div class=\"second-box row-7 col-15\"></div><div class=\"second-box row-8 col-15\"></div><div class=\"second-box row-9 col-15\"></div><div class=\"second-box row-10 col-15\"></div><div class=\"second-box row-11 col-15\"></div><div class=\"second-box row-12 col-15\"></div><div class=\"second-box row-13 col-15\"></div><div class=\"second-box row-14 col-15\"></div><div class=\"second-box row-15 col-15\"></div><div class=\"second-box row-15 col-14\"></div><div class=\"second-box row-15 col-13\"></div><div class=\"second-box row-15 col-12\"></div><div class=\"second-box row-15 col-11\"></div><div class=\"second-box row-15 col-10\"></div><div class=\"second-box row-15 col-9\"></div><div class=\"second-box row-15 col-8\"></div><div class=\"second-box row-15 col-7\"></div><div class=\"second-box row-15 col-6\"></div><div class=\"second-box row-15 col-5\"></div><div class=\"second-box row-15 col-4\"></div><div class=\"second-box row-15 col-3\"></div><div class=\"second-box row-15 col-2\"></div><div class=\"second-box row-15 col-1\"></div><div class=\"second-box row-15 col-0\"></div><div class=\"second-box row-14 col-0\"></div><div class=\"second-box row-13 col-0\"></div><div class=\"second-box row-12 col-0\"></div><div class=\"second-box row-11 col-0\"></div><div class=\"second-box row-10 col-0\"></div><div class=\"second-box row-9 col-0\"></div><div class=\"second-box row-8 col-0\"></div><div class=\"second-box row-7 col-0\"></div><div class=\"second-box row-6 col-0\"></div><div class=\"second-box row-5 col-0\"></div><div class=\"second-box row-4 col-0\"></div><div class=\"second-box row-3 col-0\"></div><div class=\"second-box row-2 col-0\"></div><div class=\"second-box row-1 col-0\"></div><div class=\"second-box row-0 col-0\"></div><div class=\"second-box row-0 col-1\"></div><div class=\"second-box row-0 col-2\"></div><div class=\"second-box row-0 col-3\"></div><div class=\"second-box row-0 col-4\"></div><div class=\"second-box row-0 col-5\"></div><div class=\"second-box row-0 col-6\"></div><div class=\"second-box row-0 col-7\"></div>"
+</script>
+
+<script>
+const hour_boxes = document.querySelectorAll('.hour-box');
+const minute_boxes = document.querySelectorAll('.minute-box');
+const second_boxes = document.querySelectorAll('.second-box');
+
+var count = 0;
+
+function add(){ count++; tick(); }
+
+// function getTimeCurrent () {
+// 	const time = new Date();
+// 	const hour = time.getHours() % 12;
+// 	const minute = time.getMinutes();
+// 	const second = time.getSeconds();
+
+// 	return { hour, minute, second };
+// }
+
+// function getTimeOffset(ho = 0, mo = 0, so = 0) {
+// 	const time = new Date();
+
+// 	var hour = time.getHours() + ho;
+// 	var minute = time.getMinutes() + mo;
+// 	var second = time.getSeconds() + so;
+
+// 	if(second >= 60) {
+// 		minute += parseInt(second / 60);
+// 		second = second % 60;
+// 	}
+// 	if(minute >= 60) {
+// 		hour += parseInt(minute / 60);
+// 		minute = minute % 60;
+// 	}
+// 	if(hour >= 12) {
+// 		hour = hour % 12;
+// 	}
+
+// 	return { hour, minute, second };
+// }
+
+function fillTime(hour, minute, second) {
+
+	if(second === 0 && minute === 0 && hour === 0) {
+		second = 60;
+		minute = 60;
+		hour = 12;
+	}
+	else if(second === 0 && minute === 0) {
+		second = 60;
+		minute = 60;
+	}
+	else if(second === 0) {
+		second = 60;
+	}
+
+	for(var i = 0; i < hour; i++) hour_boxes[i].classList.add('on');
+	for(var i = hour; i < 12; i++) hour_boxes[i].classList.remove('on');
+	for(var i = 0; i < minute; i++) minute_boxes[i].classList.add('on');
+	for(var i = minute; i < 60; i++) minute_boxes[i].classList.remove('on');
+	for(var i = 0; i < second; i++) second_boxes[i].classList.add('on');
+	for(var i = second; i < 60; i++) second_boxes[i].classList.remove('on');
+
+
+	// if(noon) {
+	// 	for(var i = 0; i < hour; i++) hour_boxes[i].classList.remove('on');
+	// 	for(var i = hour; i < 12; i++) hour_boxes[i].classList.add('on');	
+	// }
+	// else {
+	// 	for(var i = 0; i < hour; i++) hour_boxes[i].classList.add('on');
+	// 	for(var i = hour; i < 12; i++) hour_boxes[i].classList.remove('on');
+	// }
+
+	// if(hour % 2){
+	// 	for(var i = 0; i < minute; i++) minute_boxes[i].classList.remove('on');
+	// 	for(var i = minute; i < 60; i++) minute_boxes[i].classList.add('on');	
+	// }
+	// else{
+	// 	for(var i = 0; i < minute; i++) minute_boxes[i].classList.add('on');
+	// 	for(var i = minute; i < 60; i++) minute_boxes[i].classList.remove('on');	
+	// }
+
+	// if(minute % 2) {
+	// 	for(var i = 0; i < second; i++) second_boxes[i].classList.remove('on');
+	// 	for(var i = second; i < 60; i++) second_boxes[i].classList.add('on');	
+	// }
+	// else{
+	// 	for(var i = 0; i < second; i++) second_boxes[i].classList.add('on');
+	// 	for(var i = second; i < 60; i++) second_boxes[i].classList.remove('on');
+	// }
+}
+
+function clearClockwise (level, cur) {
+
+	if(cur == 60) return;
+
+	if(level <= 0){
+		if(cur < 12) hour_boxes[cur].classList.remove('on');	
+	}
+
+	if(level <= 1){
+		minute_boxes[cur].classList.remove('on');	
+	}
+
+	if(level <= 2){
+		second_boxes[cur].classList.remove('on');
+	}
+
+	clearClockwise(level, cur+1);
+
+	// setTimeout(function() {clearClockwise(level, cur+1)}, 250);
+}
+
+function tick () {
+
+	// const { hour, minute, second } = getTimeCurrent();
+	// const times = getTimeOffset(0, 0 + count, 0);
+
+
+
+	const time = new Date();
+
+	var noon = 0;
+	var hour = time.getHours();
+	var minute = time.getMinutes() + count;
+	var second = time.getSeconds();
+
+	if(second >= 60) {
+		minute += parseInt(second / 60);
+		second = second % 60;
+	}
+	if(minute >= 60) {
+		hour += parseInt(minute / 60);
+		minute = minute % 60;
+	}
+	if(hour >= 12) {
+		noon = parseInt(hour/12) % 2;
+		hour = hour % 12;
+	}
+
+	console.log(hour, minute, second)
+
+	// if(hour === 0 && minute === 0 && second === 0) {
+
+	// 	fillTime(12, 60, 60);
+
+	// 	clearClockwise(0, 0);	
+	// }
+
+	// else if(minute === 0 && second === 0) {
+	// 	fillTime(hour, 60, 60);
+
+	// 	clearClockwise(1, 0);
+	// }
+
+	// else if(second === 0) {
+	// 	fillTime(hour, minute, 60);
+
+	// 	clearClockwise(2, 0);
+	// }
+
+	// else fillTime(hour, minute, second);
+
+	fillTime(hour, minute, second);
+}
+
+setInterval(tick, 1000);
+tick();
+</script>
+
+<script type="text/javascript">
+
+	const divs = document.querySelectorAll('.hour-box, .minute-box, .second-box');
+	const hidden = [];
+
+	function init() {
+
+		for(var i = 0; i < divs.length; i++){
+			divs[i].classList.add('hidden');
+		}
+
+		for(var i = 0; i < divs.length; i++){
+			hidden.push(i);
+		}
+	}
+
+	function structure() {
+
+		const sel = Math.floor(Math.random() * hidden.length);
+		const idx = hidden[sel];
+
+		divs[idx].classList.remove('hidden');
+		hidden.splice(sel, 1);
+
+		if(hidden.length === 0) return;
+
+		setTimeout(function (){ structure() }, 20);
+	} 
+
+	init();
+	structure();
+</script>
+
+<style>
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px), (max-height: 480px) {
+  html {
+    font-size: 1px;
+  }
+}
+@media (min-width: 481px) and (min-height: 481px) {
+  html {
+    font-size: 2px;
+  }
+}
+@font-face {
+  font-family: "ocr-b";
+  src: url("ENOCRB10.ttf") format("truetype");
+  font-weight: normal;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: ocr-b, ocr-b-std, monospace;
+}
+
+#frame-wrapper {
+  width: 100vmin;
+  height: 100vmin;
+  padding: 5vmin;
+}
+#frame-wrapper #frame {
+  border: solid #fff 1rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+#frame-wrapper #frame #design {
+  border: solid #fff 1rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#frame-wrapper #frame #design * {
+  position: absolute;
+  box-sizing: content-box;
+}
+#frame-wrapper #frame #design #hours, #frame-wrapper #frame #design #minutes, #frame-wrapper #frame #design #seconds {
+  border: solid #fff 1rem;
+  overflow: hidden;
+}
+#frame-wrapper #frame #description-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#frame-wrapper #frame #description-wrapper #description {
+  font-size: 1vmin;
+  color: #fff;
+}
+
+/*# sourceMappingURL=frame.css.map */
+
+
+</style>
+<style type="text/css">
+
+body{
+	color: white;
+	font-size: 20px;
+}
+.hidden, .hidden::after{
+	visibility: hidden;
+}
+
+</style>
+<style type="text/css">
+
+#hours {
+  z-index: 2;
+}
+
+#minutes {
+  z-index: 1;
+}
+
+#seconds {
+  z-index: 1;
+}
+
+#hours {
+  top: calc(25% - 1rem);
+  left: calc(25% - 1rem);
+  width: 50%;
+  height: 50%;
+  background-color: #000;
+}
+#hours .hour-box {
+  border-left: solid #fff 1rem;
+  bottom: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  width: 100%;
+  height: 100%;
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  overflow: hidden;
+}
+#hours .hour-box.rot-0 {
+  transform: rotate(0deg);
+}
+#hours .hour-box.rot-1 {
+  transform: rotate(30deg);
+}
+#hours .hour-box.rot-2 {
+  transform: rotate(60deg);
+}
+#hours .hour-box.rot-3 {
+  transform: rotate(90deg);
+}
+#hours .hour-box.rot-4 {
+  transform: rotate(120deg);
+}
+#hours .hour-box.rot-5 {
+  transform: rotate(150deg);
+}
+#hours .hour-box.rot-6 {
+  transform: rotate(180deg);
+}
+#hours .hour-box.rot-7 {
+  transform: rotate(210deg);
+}
+#hours .hour-box.rot-8 {
+  transform: rotate(240deg);
+}
+#hours .hour-box.rot-9 {
+  transform: rotate(270deg);
+}
+#hours .hour-box.rot-10 {
+  transform: rotate(300deg);
+}
+#hours .hour-box.rot-11 {
+  transform: rotate(330deg);
+}
+#hours .hour-box::after {
+  border: solid #fff 1rem;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-60deg);
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  background-color: #000;
+}
+#hours .hour-box.on::after {
+  background-color: #fdeb00;
+}
+
+#minutes {
+  left: calc(0% + 6.25% - 0.9375rem);
+  top: calc(0% + 6.25% - 0.9375rem);
+  width: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
+  height: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
+}
+#minutes .minute-box {
+  border-left: solid #fff 1rem;
+  bottom: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  width: 100%;
+  height: 100%;
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  overflow: hidden;
+}
+#minutes .minute-box.rot-0 {
+  transform: rotate(0deg);
+}
+#minutes .minute-box.rot-1 {
+  transform: rotate(6deg);
+}
+#minutes .minute-box.rot-2 {
+  transform: rotate(12deg);
+}
+#minutes .minute-box.rot-3 {
+  transform: rotate(18deg);
+}
+#minutes .minute-box.rot-4 {
+  transform: rotate(24deg);
+}
+#minutes .minute-box.rot-5 {
+  transform: rotate(30deg);
+}
+#minutes .minute-box.rot-6 {
+  transform: rotate(36deg);
+}
+#minutes .minute-box.rot-7 {
+  transform: rotate(42deg);
+}
+#minutes .minute-box.rot-8 {
+  transform: rotate(48deg);
+}
+#minutes .minute-box.rot-9 {
+  transform: rotate(54deg);
+}
+#minutes .minute-box.rot-10 {
+  transform: rotate(60deg);
+}
+#minutes .minute-box.rot-11 {
+  transform: rotate(66deg);
+}
+#minutes .minute-box.rot-12 {
+  transform: rotate(72deg);
+}
+#minutes .minute-box.rot-13 {
+  transform: rotate(78deg);
+}
+#minutes .minute-box.rot-14 {
+  transform: rotate(84deg);
+}
+#minutes .minute-box.rot-15 {
+  transform: rotate(90deg);
+}
+#minutes .minute-box.rot-16 {
+  transform: rotate(96deg);
+}
+#minutes .minute-box.rot-17 {
+  transform: rotate(102deg);
+}
+#minutes .minute-box.rot-18 {
+  transform: rotate(108deg);
+}
+#minutes .minute-box.rot-19 {
+  transform: rotate(114deg);
+}
+#minutes .minute-box.rot-20 {
+  transform: rotate(120deg);
+}
+#minutes .minute-box.rot-21 {
+  transform: rotate(126deg);
+}
+#minutes .minute-box.rot-22 {
+  transform: rotate(132deg);
+}
+#minutes .minute-box.rot-23 {
+  transform: rotate(138deg);
+}
+#minutes .minute-box.rot-24 {
+  transform: rotate(144deg);
+}
+#minutes .minute-box.rot-25 {
+  transform: rotate(150deg);
+}
+#minutes .minute-box.rot-26 {
+  transform: rotate(156deg);
+}
+#minutes .minute-box.rot-27 {
+  transform: rotate(162deg);
+}
+#minutes .minute-box.rot-28 {
+  transform: rotate(168deg);
+}
+#minutes .minute-box.rot-29 {
+  transform: rotate(174deg);
+}
+#minutes .minute-box.rot-30 {
+  transform: rotate(180deg);
+}
+#minutes .minute-box.rot-31 {
+  transform: rotate(186deg);
+}
+#minutes .minute-box.rot-32 {
+  transform: rotate(192deg);
+}
+#minutes .minute-box.rot-33 {
+  transform: rotate(198deg);
+}
+#minutes .minute-box.rot-34 {
+  transform: rotate(204deg);
+}
+#minutes .minute-box.rot-35 {
+  transform: rotate(210deg);
+}
+#minutes .minute-box.rot-36 {
+  transform: rotate(216deg);
+}
+#minutes .minute-box.rot-37 {
+  transform: rotate(222deg);
+}
+#minutes .minute-box.rot-38 {
+  transform: rotate(228deg);
+}
+#minutes .minute-box.rot-39 {
+  transform: rotate(234deg);
+}
+#minutes .minute-box.rot-40 {
+  transform: rotate(240deg);
+}
+#minutes .minute-box.rot-41 {
+  transform: rotate(246deg);
+}
+#minutes .minute-box.rot-42 {
+  transform: rotate(252deg);
+}
+#minutes .minute-box.rot-43 {
+  transform: rotate(258deg);
+}
+#minutes .minute-box.rot-44 {
+  transform: rotate(264deg);
+}
+#minutes .minute-box.rot-45 {
+  transform: rotate(270deg);
+}
+#minutes .minute-box.rot-46 {
+  transform: rotate(276deg);
+}
+#minutes .minute-box.rot-47 {
+  transform: rotate(282deg);
+}
+#minutes .minute-box.rot-48 {
+  transform: rotate(288deg);
+}
+#minutes .minute-box.rot-49 {
+  transform: rotate(294deg);
+}
+#minutes .minute-box.rot-50 {
+  transform: rotate(300deg);
+}
+#minutes .minute-box.rot-51 {
+  transform: rotate(306deg);
+}
+#minutes .minute-box.rot-52 {
+  transform: rotate(312deg);
+}
+#minutes .minute-box.rot-53 {
+  transform: rotate(318deg);
+}
+#minutes .minute-box.rot-54 {
+  transform: rotate(324deg);
+}
+#minutes .minute-box.rot-55 {
+  transform: rotate(330deg);
+}
+#minutes .minute-box.rot-56 {
+  transform: rotate(336deg);
+}
+#minutes .minute-box.rot-57 {
+  transform: rotate(342deg);
+}
+#minutes .minute-box.rot-58 {
+  transform: rotate(348deg);
+}
+#minutes .minute-box.rot-59 {
+  transform: rotate(354deg);
+}
+#minutes .minute-box::after {
+  border: solid #fff 1rem;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-84deg);
+  transform-origin: 0.5rem calc(100% - 0.5rem);
+  background-color: #000;
+}
+#minutes .minute-box.on::after {
+  background-color: #03ffec;
+}
+
+#seconds {
+  top: calc(0% - 1rem);
+  left: calc(0% - 1rem);
+  width: 100%;
+  height: 100%;
+}
+#seconds .second-box {
+  border: solid #fff 1rem;
+  width: calc(6.25% - 0.9375rem);
+  height: calc(6.25% - 0.9375rem);
+  background-color: #000;
+}
+#seconds .second-box.row-0 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
+}
+#seconds .second-box.col-0 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
+}
+#seconds .second-box.row-1 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
+}
+#seconds .second-box.col-1 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
+}
+#seconds .second-box.row-2 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
+}
+#seconds .second-box.col-2 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
+}
+#seconds .second-box.row-3 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
+}
+#seconds .second-box.col-3 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
+}
+#seconds .second-box.row-4 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
+}
+#seconds .second-box.col-4 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
+}
+#seconds .second-box.row-5 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
+}
+#seconds .second-box.col-5 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
+}
+#seconds .second-box.row-6 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
+}
+#seconds .second-box.col-6 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
+}
+#seconds .second-box.row-7 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
+}
+#seconds .second-box.col-7 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
+}
+#seconds .second-box.row-8 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
+}
+#seconds .second-box.col-8 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
+}
+#seconds .second-box.row-9 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
+}
+#seconds .second-box.col-9 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
+}
+#seconds .second-box.row-10 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
+}
+#seconds .second-box.col-10 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
+}
+#seconds .second-box.row-11 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
+}
+#seconds .second-box.col-11 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
+}
+#seconds .second-box.row-12 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
+}
+#seconds .second-box.col-12 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
+}
+#seconds .second-box.row-13 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
+}
+#seconds .second-box.col-13 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
+}
+#seconds .second-box.row-14 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
+}
+#seconds .second-box.col-14 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
+}
+#seconds .second-box.row-15 {
+  top: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
+}
+#seconds .second-box.col-15 {
+  left: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
+}
+#seconds .second-box.on {
+  background-color: #fdeb00;
+}
+
+/*.hour-box:not(.on)::after, .minute-box:not(.on)::after, .second-box:not(.on) {
+	transition: background-color 5s;
+}
+*/
+/*# sourceMappingURL=design-a.css.map */
+
+</style>
+
+</html>

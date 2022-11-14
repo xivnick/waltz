@@ -3,15 +3,6 @@ const hour_boxes = document.querySelectorAll('.hour-box');
 const minute_boxes = document.querySelectorAll('.minute-box');
 const second_boxes = document.querySelectorAll('.second-box');
 
-const getTimeCurrent = () => {
-	const time = new Date();
-	const hour = time.getHours() % 12;
-	const minute = time.getMinutes();
-	const second = time.getSeconds();
-
-	return { hour, minute, second };
-}
-
 const getTimeOffset = (ho = 0, mo = 0, so = 0) => {
 	const time = new Date();
 
@@ -43,21 +34,17 @@ const fillTime = (hour, minute, second) => {
 
 const clearClockwise = (level, cur) => {
 
-	if(level === 0){
-		if(cur === 12) return;
+	if(cur == 60) return;
 
-		hour_boxes[cur].classList.remove('on');	
+	if(level <= 0){
+		if(cur < 12) hour_boxes[cur].classList.remove('on');	
 	}
 
-	if(level === 1){
-		if(cur === 60) return;
-
+	if(level <= 1){
 		minute_boxes[cur].classList.remove('on');	
 	}
 
-	if(level === 2){
-		if(cur === 60) return;
-
+	if(level <= 2){
 		second_boxes[cur].classList.remove('on');
 	}
 
@@ -66,23 +53,18 @@ const clearClockwise = (level, cur) => {
 
 const tick = () => {
 
-	// const { hour, minute, second } = getTimeCurrent();
 	const { hour, minute, second } = getTimeOffset(0, 0, 0);
 
 	if(hour === 0 && minute === 0 && second === 0) {
 
 		fillTime(12, 60, 60);
 
-		clearClockwise(0, 0);
-		clearClockwise(1, 0);
-		clearClockwise(2, 0);
-	}
+		clearClockwise(0, 0);	}
 
 	else if(minute === 0 && second === 0) {
 		fillTime(hour, 60, 60);
 
 		clearClockwise(1, 0);
-		clearClockwise(2, 0);
 	}
 
 	else if(second === 0) {

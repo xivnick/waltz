@@ -1,7 +1,8 @@
 
-const hours = document.querySelector('#hours');
-const minutes = document.querySelector('#minutes');
-const seconds = document.querySelector('#seconds');
+(() => {
+const hours = document.querySelector('.n #hours');
+const minutes = document.querySelector('.n #minutes');
+const seconds = document.querySelector('.n #seconds');
 
 for(let i = 0; i < 12; i++){
 	hours.innerHTML += `<div class="hour-box rot-${i}"></div>`;
@@ -34,3 +35,4 @@ seconds.innerHTML = `
 	<div class="second-group pos-bottom pos-left">${group3}</div>
 	<div class="second-group pos-top pos-left">${group4}</div>
 `
+})();

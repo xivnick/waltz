@@ -1,6 +1,7 @@
 
 @import "_variables.scss";
 
+.p{
 #hours {
 	z-index: 2;
 }
@@ -95,4 +96,5 @@
 	.second-box {
 		@include monopoly( color(second) );
 	}
+}
 }

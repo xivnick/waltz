@@ -1,6 +1,8 @@
 
 @import "_variables.scss";
 
+.j{
+
 #hours {
 	z-index: 3;
 }
@@ -95,4 +97,5 @@
 			@include pizza(6deg, color(second));
 		}
 	}
+}
 }

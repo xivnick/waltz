@@ -1,68 +1,70 @@
 
 @import "_variables.scss";
 
-#hours {
-	z-index: 3;
-}
+.c {
+	#hours {
+		z-index: 3;
+	}
 
-#minutes {
-	z-index: 1;
-}
+	#minutes {
+		z-index: 1;
+	}
 
-#seconds {
-	z-index: 2;
-}
+	#seconds {
+		z-index: 2;
+	}
 
-#hours {
-	@include monopoly-inner(60%);
+	#hours {
+		@include monopoly-inner(60%);
 
-	transform: rotate(-45deg);
-
-	background-color: $background-color;
-
-	.hour-box{
-		@include border;
-
-		transform: rotate(45deg);
+		transform: rotate(-45deg);
 
 		background-color: $background-color;
 
-		@for $i from 0 to 12 {
-			&.level-#{$i} {
-				@include center-square( $i * 11.78% + 11.78% );
+		.hour-box{
+			@include border;
 
-				z-index: 12 - $i;
-			}
-		}
+			transform: rotate(45deg);
 
-		&.on {
-			@for $i from 0 to 2 {
-				&.color-#{$i}{
-					background-color: color(hour, $i);
+			background-color: $background-color;
+
+			@for $i from 0 to 12 {
+				&.level-#{$i} {
+					@include center-square( $i * 11.78% + 11.78% );
+
+					z-index: 12 - $i;
 				}
 			}
+
+			&.on {
+				@for $i from 0 to 2 {
+					&.color-#{$i}{
+						background-color: color(hour, $i);
+					}
+				}
+			}
+
+		}
+	}
+
+	#minutes {
+		@include center-square();
+
+		.minute-box {
+			@include pizza( 6deg, color(minute) )
+		}
+	}
+
+	#seconds {
+		@include center-square(60%);
+
+		transform: rotate(-45deg);
+
+		background-color: $background-color;
+
+		.second-box {
+			@include monopoly( color(second) );
 		}
 
 	}
-}
-
-#minutes {
-	@include center-square();
-
-	.minute-box {
-		@include pizza( 6deg, color(minute) )
-	}
-}
-
-#seconds {
-	@include center-square(60%);
-
-	transform: rotate(-45deg);
-
-	background-color: $background-color;
-
-	.second-box {
-		@include monopoly( color(second) );
-	}
-
 }

@@ -1,40 +1,42 @@
 
 @import "_variables.scss";
 
-#hours {
-	z-index: 2;
-}
-
-#minutes {
-	z-index: 1;
-}
-
-#seconds {
-	z-index: 1;
-}
-
-#hours {
-	@include center-square(50%);
-
-	background-color: $background-color;
-
-	.hour-box {
-		@include pizza( 30deg, color(hour) );
+.a {
+	#hours {
+		z-index: 2;
 	}
-}
 
-#minutes {
-	@include monopoly-inner;
-
-	.minute-box {
-		@include pizza( 6deg, color(minute) );
+	#minutes {
+		z-index: 1;
 	}
-}
 
-#seconds {
-	@include center-square();
+	#seconds {
+		z-index: 1;
+	}
 
-	.second-box {
-		@include monopoly( color(second) );
+	#hours {
+		@include center-square(50%);
+
+		background-color: $background-color;
+
+		.hour-box {
+			@include pizza( 30deg, color(hour) );
+		}
+	}
+
+	#minutes {
+		@include monopoly-inner;
+
+		.minute-box {
+			@include pizza( 6deg, color(minute) );
+		}
+	}
+
+	#seconds {
+		@include center-square();
+
+		.second-box {
+			@include monopoly( color(second) );
+		}
 	}
 }

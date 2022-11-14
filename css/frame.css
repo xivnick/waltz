@@ -74,4 +74,8 @@ body {
   color: #fff;
 }
 
+.hidden, .hidden::after {
+  visibility: hidden;
+}
+
 /*# sourceMappingURL=frame.css.map */

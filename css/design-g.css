@@ -1,23 +1,20 @@
-#hours {
+.g #hours {
   z-index: 2;
 }
-
-#minutes {
+.g #minutes {
   z-index: 1;
 }
-
-#seconds {
+.g #seconds {
   z-index: 1;
 }
-
-#hours {
+.g #hours {
   top: 12.5%;
   left: 12.5%;
   width: 75%;
   height: 75%;
   border: none !important;
 }
-#hours .hour-back {
+.g #hours .hour-back {
   bottom: calc(50% - 0.5rem);
   left: calc(50% - 0.5rem);
   width: 100%;
@@ -25,25 +22,25 @@
   transform-origin: 0.5rem calc(100% - 0.5rem);
   overflow: hidden;
 }
-#hours .hour-back.rot-0 {
+.g #hours .hour-back.rot-0 {
   transform: rotate(0deg);
 }
-#hours .hour-back.rot-1 {
+.g #hours .hour-back.rot-1 {
   transform: rotate(60deg);
 }
-#hours .hour-back.rot-2 {
+.g #hours .hour-back.rot-2 {
   transform: rotate(120deg);
 }
-#hours .hour-back.rot-3 {
+.g #hours .hour-back.rot-3 {
   transform: rotate(180deg);
 }
-#hours .hour-back.rot-4 {
+.g #hours .hour-back.rot-4 {
   transform: rotate(240deg);
 }
-#hours .hour-back.rot-5 {
+.g #hours .hour-back.rot-5 {
   transform: rotate(300deg);
 }
-#hours .hour-back .triangle {
+.g #hours .hour-back .triangle {
   bottom: 0;
   left: 0;
   width: 100%;
@@ -52,7 +49,7 @@
   transform: rotate(-30deg);
   overflow: hidden;
 }
-#hours .hour-back .triangle::after {
+.g #hours .hour-back .triangle::after {
   border-bottom: solid #fff 1rem;
   content: "";
   position: absolute;
@@ -63,14 +60,13 @@
   transform-origin: 50% calc(100% - 0.5rem);
   transform: rotate(240deg);
 }
-
-#minutes {
+.g #minutes {
   left: calc(0% + 6.25% - 0.9375rem);
   top: calc(0% + 6.25% - 0.9375rem);
   width: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
   height: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
 }
-#minutes .minute-box {
+.g #minutes .minute-box {
   border-left: solid #fff 1rem;
   bottom: calc(50% - 0.5rem);
   left: calc(50% - 0.5rem);
@@ -79,187 +75,187 @@
   transform-origin: 0.5rem calc(100% - 0.5rem);
   overflow: hidden;
 }
-#minutes .minute-box.rot-0 {
+.g #minutes .minute-box.rot-0 {
   transform: rotate(0deg);
 }
-#minutes .minute-box.rot-1 {
+.g #minutes .minute-box.rot-1 {
   transform: rotate(6deg);
 }
-#minutes .minute-box.rot-2 {
+.g #minutes .minute-box.rot-2 {
   transform: rotate(12deg);
 }
-#minutes .minute-box.rot-3 {
+.g #minutes .minute-box.rot-3 {
   transform: rotate(18deg);
 }
-#minutes .minute-box.rot-4 {
+.g #minutes .minute-box.rot-4 {
   transform: rotate(24deg);
 }
-#minutes .minute-box.rot-5 {
+.g #minutes .minute-box.rot-5 {
   transform: rotate(30deg);
 }
-#minutes .minute-box.rot-6 {
+.g #minutes .minute-box.rot-6 {
   transform: rotate(36deg);
 }
-#minutes .minute-box.rot-7 {
+.g #minutes .minute-box.rot-7 {
   transform: rotate(42deg);
 }
-#minutes .minute-box.rot-8 {
+.g #minutes .minute-box.rot-8 {
   transform: rotate(48deg);
 }
-#minutes .minute-box.rot-9 {
+.g #minutes .minute-box.rot-9 {
   transform: rotate(54deg);
 }
-#minutes .minute-box.rot-10 {
+.g #minutes .minute-box.rot-10 {
   transform: rotate(60deg);
 }
-#minutes .minute-box.rot-11 {
+.g #minutes .minute-box.rot-11 {
   transform: rotate(66deg);
 }
-#minutes .minute-box.rot-12 {
+.g #minutes .minute-box.rot-12 {
   transform: rotate(72deg);
 }
-#minutes .minute-box.rot-13 {
+.g #minutes .minute-box.rot-13 {
   transform: rotate(78deg);
 }
-#minutes .minute-box.rot-14 {
+.g #minutes .minute-box.rot-14 {
   transform: rotate(84deg);
 }
-#minutes .minute-box.rot-15 {
+.g #minutes .minute-box.rot-15 {
   transform: rotate(90deg);
 }
-#minutes .minute-box.rot-16 {
+.g #minutes .minute-box.rot-16 {
   transform: rotate(96deg);
 }
-#minutes .minute-box.rot-17 {
+.g #minutes .minute-box.rot-17 {
   transform: rotate(102deg);
 }
-#minutes .minute-box.rot-18 {
+.g #minutes .minute-box.rot-18 {
   transform: rotate(108deg);
 }
-#minutes .minute-box.rot-19 {
+.g #minutes .minute-box.rot-19 {
   transform: rotate(114deg);
 }
-#minutes .minute-box.rot-20 {
+.g #minutes .minute-box.rot-20 {
   transform: rotate(120deg);
 }
-#minutes .minute-box.rot-21 {
+.g #minutes .minute-box.rot-21 {
   transform: rotate(126deg);
 }
-#minutes .minute-box.rot-22 {
+.g #minutes .minute-box.rot-22 {
   transform: rotate(132deg);
 }
-#minutes .minute-box.rot-23 {
+.g #minutes .minute-box.rot-23 {
   transform: rotate(138deg);
 }
-#minutes .minute-box.rot-24 {
+.g #minutes .minute-box.rot-24 {
   transform: rotate(144deg);
 }
-#minutes .minute-box.rot-25 {
+.g #minutes .minute-box.rot-25 {
   transform: rotate(150deg);
 }
-#minutes .minute-box.rot-26 {
+.g #minutes .minute-box.rot-26 {
   transform: rotate(156deg);
 }
-#minutes .minute-box.rot-27 {
+.g #minutes .minute-box.rot-27 {
   transform: rotate(162deg);
 }
-#minutes .minute-box.rot-28 {
+.g #minutes .minute-box.rot-28 {
   transform: rotate(168deg);
 }
-#minutes .minute-box.rot-29 {
+.g #minutes .minute-box.rot-29 {
   transform: rotate(174deg);
 }
-#minutes .minute-box.rot-30 {
+.g #minutes .minute-box.rot-30 {
   transform: rotate(180deg);
 }
-#minutes .minute-box.rot-31 {
+.g #minutes .minute-box.rot-31 {
   transform: rotate(186deg);
 }
-#minutes .minute-box.rot-32 {
+.g #minutes .minute-box.rot-32 {
   transform: rotate(192deg);
 }
-#minutes .minute-box.rot-33 {
+.g #minutes .minute-box.rot-33 {
   transform: rotate(198deg);
 }
-#minutes .minute-box.rot-34 {
+.g #minutes .minute-box.rot-34 {
   transform: rotate(204deg);
 }
-#minutes .minute-box.rot-35 {
+.g #minutes .minute-box.rot-35 {
   transform: rotate(210deg);
 }
-#minutes .minute-box.rot-36 {
+.g #minutes .minute-box.rot-36 {
   transform: rotate(216deg);
 }
-#minutes .minute-box.rot-37 {
+.g #minutes .minute-box.rot-37 {
   transform: rotate(222deg);
 }
-#minutes .minute-box.rot-38 {
+.g #minutes .minute-box.rot-38 {
   transform: rotate(228deg);
 }
-#minutes .minute-box.rot-39 {
+.g #minutes .minute-box.rot-39 {
   transform: rotate(234deg);
 }
-#minutes .minute-box.rot-40 {
+.g #minutes .minute-box.rot-40 {
   transform: rotate(240deg);
 }
-#minutes .minute-box.rot-41 {
+.g #minutes .minute-box.rot-41 {
   transform: rotate(246deg);
 }
-#minutes .minute-box.rot-42 {
+.g #minutes .minute-box.rot-42 {
   transform: rotate(252deg);
 }
-#minutes .minute-box.rot-43 {
+.g #minutes .minute-box.rot-43 {
   transform: rotate(258deg);
 }
-#minutes .minute-box.rot-44 {
+.g #minutes .minute-box.rot-44 {
   transform: rotate(264deg);
 }
-#minutes .minute-box.rot-45 {
+.g #minutes .minute-box.rot-45 {
   transform: rotate(270deg);
 }
-#minutes .minute-box.rot-46 {
+.g #minutes .minute-box.rot-46 {
   transform: rotate(276deg);
 }
-#minutes .minute-box.rot-47 {
+.g #minutes .minute-box.rot-47 {
   transform: rotate(282deg);
 }
-#minutes .minute-box.rot-48 {
+.g #minutes .minute-box.rot-48 {
   transform: rotate(288deg);
 }
-#minutes .minute-box.rot-49 {
+.g #minutes .minute-box.rot-49 {
   transform: rotate(294deg);
 }
-#minutes .minute-box.rot-50 {
+.g #minutes .minute-box.rot-50 {
   transform: rotate(300deg);
 }
-#minutes .minute-box.rot-51 {
+.g #minutes .minute-box.rot-51 {
   transform: rotate(306deg);
 }
-#minutes .minute-box.rot-52 {
+.g #minutes .minute-box.rot-52 {
   transform: rotate(312deg);
 }
-#minutes .minute-box.rot-53 {
+.g #minutes .minute-box.rot-53 {
   transform: rotate(318deg);
 }
-#minutes .minute-box.rot-54 {
+.g #minutes .minute-box.rot-54 {
   transform: rotate(324deg);
 }
-#minutes .minute-box.rot-55 {
+.g #minutes .minute-box.rot-55 {
   transform: rotate(330deg);
 }
-#minutes .minute-box.rot-56 {
+.g #minutes .minute-box.rot-56 {
   transform: rotate(336deg);
 }
-#minutes .minute-box.rot-57 {
+.g #minutes .minute-box.rot-57 {
   transform: rotate(342deg);
 }
-#minutes .minute-box.rot-58 {
+.g #minutes .minute-box.rot-58 {
   transform: rotate(348deg);
 }
-#minutes .minute-box.rot-59 {
+.g #minutes .minute-box.rot-59 {
   transform: rotate(354deg);
 }
-#minutes .minute-box::after {
+.g #minutes .minute-box::after {
   border: solid #fff 1rem;
   content: "";
   position: absolute;
@@ -271,119 +267,118 @@
   transform-origin: 0.5rem calc(100% - 0.5rem);
   background-color: #000;
 }
-#minutes .minute-box.on::after {
+.g #minutes .minute-box.on::after {
   background-color: var(--color-minute-0);
 }
-
-#seconds {
+.g #seconds {
   top: calc(0% - 1rem);
   left: calc(0% - 1rem);
   width: 100%;
   height: 100%;
 }
-#seconds .second-box {
+.g #seconds .second-box {
   border: solid #fff 1rem;
   width: calc(6.25% - 0.9375rem);
   height: calc(6.25% - 0.9375rem);
   background-color: #000;
 }
-#seconds .second-box.row-0 {
+.g #seconds .second-box.row-0 {
   top: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
 }
-#seconds .second-box.col-0 {
+.g #seconds .second-box.col-0 {
   left: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
 }
-#seconds .second-box.row-1 {
+.g #seconds .second-box.row-1 {
   top: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
 }
-#seconds .second-box.col-1 {
+.g #seconds .second-box.col-1 {
   left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
 }
-#seconds .second-box.row-2 {
+.g #seconds .second-box.row-2 {
   top: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
 }
-#seconds .second-box.col-2 {
+.g #seconds .second-box.col-2 {
   left: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
 }
-#seconds .second-box.row-3 {
+.g #seconds .second-box.row-3 {
   top: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
 }
-#seconds .second-box.col-3 {
+.g #seconds .second-box.col-3 {
   left: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
 }
-#seconds .second-box.row-4 {
+.g #seconds .second-box.row-4 {
   top: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
 }
-#seconds .second-box.col-4 {
+.g #seconds .second-box.col-4 {
   left: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
 }
-#seconds .second-box.row-5 {
+.g #seconds .second-box.row-5 {
   top: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
 }
-#seconds .second-box.col-5 {
+.g #seconds .second-box.col-5 {
   left: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
 }
-#seconds .second-box.row-6 {
+.g #seconds .second-box.row-6 {
   top: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
 }
-#seconds .second-box.col-6 {
+.g #seconds .second-box.col-6 {
   left: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
 }
-#seconds .second-box.row-7 {
+.g #seconds .second-box.row-7 {
   top: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
 }
-#seconds .second-box.col-7 {
+.g #seconds .second-box.col-7 {
   left: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
 }
-#seconds .second-box.row-8 {
+.g #seconds .second-box.row-8 {
   top: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
 }
-#seconds .second-box.col-8 {
+.g #seconds .second-box.col-8 {
   left: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
 }
-#seconds .second-box.row-9 {
+.g #seconds .second-box.row-9 {
   top: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
 }
-#seconds .second-box.col-9 {
+.g #seconds .second-box.col-9 {
   left: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
 }
-#seconds .second-box.row-10 {
+.g #seconds .second-box.row-10 {
   top: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
 }
-#seconds .second-box.col-10 {
+.g #seconds .second-box.col-10 {
   left: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
 }
-#seconds .second-box.row-11 {
+.g #seconds .second-box.row-11 {
   top: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
 }
-#seconds .second-box.col-11 {
+.g #seconds .second-box.col-11 {
   left: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
 }
-#seconds .second-box.row-12 {
+.g #seconds .second-box.row-12 {
   top: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
 }
-#seconds .second-box.col-12 {
+.g #seconds .second-box.col-12 {
   left: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
 }
-#seconds .second-box.row-13 {
+.g #seconds .second-box.row-13 {
   top: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
 }
-#seconds .second-box.col-13 {
+.g #seconds .second-box.col-13 {
   left: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
 }
-#seconds .second-box.row-14 {
+.g #seconds .second-box.row-14 {
   top: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
 }
-#seconds .second-box.col-14 {
+.g #seconds .second-box.col-14 {
   left: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
 }
-#seconds .second-box.row-15 {
+.g #seconds .second-box.row-15 {
   top: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
 }
-#seconds .second-box.col-15 {
+.g #seconds .second-box.col-15 {
   left: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
 }
-#seconds .second-box.on {
+.g #seconds .second-box.on {
   background-color: var(--color-second-0);
 }
 

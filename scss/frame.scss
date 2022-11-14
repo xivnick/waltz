@@ -97,3 +97,7 @@ body {
 		}
 	}
 }
+
+.hidden, .hidden::after{
+	visibility: hidden;
+}

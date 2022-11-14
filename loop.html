@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>waltz TEST</title>
+	<link rel="stylesheet" type="text/css" href="css/frame.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-a1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-b1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-c1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-d1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-e1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-f1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-i1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-k1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-n1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-o1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-p1.css">
+	<link rel="stylesheet" type="text/css" href="css/color/color-q1.css">
+
+	<link rel="stylesheet" type="text/css" href="css/design-a.css">
+	<link rel="stylesheet" type="text/css" href="css/design-b.css">
+	<link rel="stylesheet" type="text/css" href="css/design-c.css">
+	<link rel="stylesheet" type="text/css" href="css/design-d.css">
+	<link rel="stylesheet" type="text/css" href="css/design-e.css">
+	<link rel="stylesheet" type="text/css" href="css/design-f.css">
+	<link rel="stylesheet" type="text/css" href="css/design-i.css">
+	<link rel="stylesheet" type="text/css" href="css/design-k.css">
+	<link rel="stylesheet" type="text/css" href="css/design-n.css">
+	<link rel="stylesheet" type="text/css" href="css/design-o.css">
+	<link rel="stylesheet" type="text/css" href="css/design-p.css">
+	<link rel="stylesheet" type="text/css" href="css/design-q.css">
+</head>
+<body>
+	<div id="frame-wrapper">
+		<div id="frame">
+			<div id="design" class="a">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="b">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="c">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="d">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="e">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="f">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="i">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="k">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="n">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="o">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="p">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="design" class="q">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+			</div>
+			<div id="description-wrapper">
+				<span id="description">
+					COPYRIGHT (C) 2022 WALTZ MOVEMENT / DESIGNED BY DHL / CODE.E:11222; / EDITION NO. 1/40 2022-12-01 AM 0:00
+				</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/design-a.js"></script>
+	<script type="text/javascript" src="js/design-b.js"></script>
+	<script type="text/javascript" src="js/design-c.js"></script>
+	<script type="text/javascript" src="js/design-d.js"></script>
+	<script type="text/javascript" src="js/design-e.js"></script>
+	<script type="text/javascript" src="js/design-f.js"></script>
+	<script type="text/javascript" src="js/design-i.js"></script>
+	<script type="text/javascript" src="js/design-k.js"></script>
+	<script type="text/javascript" src="js/design-n.js"></script>
+	<script type="text/javascript" src="js/design-o.js"></script>
+	<script type="text/javascript" src="js/design-p.js"></script>
+	<script type="text/javascript" src="js/design-q.js"></script>
+	<script type="text/javascript">
+		const GEN_TIME_INTERVAL = 20 // ms
+
+		let divs;
+		let hidden;
+
+		const generation = (design) => {
+			divs = document.querySelectorAll(`.${design} .hour-box, .${design} .minute-box, .${design} .second-box`);
+			hidden = [];
+
+			for(let div of divs) {
+				div.classList.add('hidden');
+			}
+
+			for(let i = 0; i < divs.length; i++){
+				hidden.push(i);
+			}
+
+			structure();
+		}
+
+		const structure = () => {
+
+			const sel = Math.floor(Math.random() * hidden.length);
+			const idx = hidden[sel];
+			divs[idx].classList.remove('hidden');
+
+			hidden.splice(sel, 1);
+
+			if(hidden.length === 0) return;
+
+			setTimeout(() => structure(), GEN_TIME_INTERVAL);
+		}
+	</script>
+	<script type="text/javascript">
+
+		let hour_boxes;
+		let minute_boxes;
+		let second_boxes;
+
+		let count;
+		let id;
+
+		const run = (design) => {
+			hour_boxes = document.querySelectorAll(`.${design} .hour-box`);
+			minute_boxes = document.querySelectorAll(`.${design} .minute-box`);
+			second_boxes = document.querySelectorAll(`.${design} .second-box`);
+
+			count = 0;
+
+			generation(design);
+
+			id = setInterval(tick, 1000);
+			tick();
+		}
+
+		const fillTime = (hour, minute, second) => {
+
+			for(let i = 0; i < hour; i++) hour_boxes[i].classList.add('on');
+			for(let i = 0; i < minute; i++) minute_boxes[i].classList.add('on');
+			for(let i = 0; i < second; i++) second_boxes[i].classList.add('on');
+		}
+
+		const clearClockwise = (level, cur) => {
+
+			if(cur == 60) return;
+
+			if(level <= 0){
+				if(cur < 12) hour_boxes[cur].classList.remove('on');	
+			}
+
+			if(level <= 1){
+				minute_boxes[cur].classList.remove('on');	
+			}
+
+			if(level <= 2){
+				second_boxes[cur].classList.remove('on');
+			}
+
+			setTimeout(() => clearClockwise(level, cur+1), 50);
+		}
+
+		const tick = () => {
+
+			let hour = 11;
+			let minute = 59;
+			let second = 55 + count;
+
+			if(second >= 60) {
+				minute += parseInt(second / 60);
+				second = second % 60;
+			}
+			if(minute >= 60) {
+				hour += parseInt(minute / 60);
+				minute = minute % 60;
+			}
+			if(hour >= 12) {
+				hour = hour % 12;
+			}
+
+			count++;
+
+			if(count === 10) {
+				count = 0;
+				clearInterval(id);
+				rundesign();
+				return;
+			}
+
+			if(hour === 0 && minute === 0 && second === 0) {
+
+				fillTime(12, 60, 60);
+
+				clearClockwise(0, 0);	
+			}
+
+			else if(minute === 0 && second === 0) {
+				fillTime(hour, 60, 60);
+
+				clearClockwise(1, 0);
+			}
+
+			else if(second === 0) {
+				fillTime(hour, minute, 60);
+
+				clearClockwise(2, 0);
+			}
+
+			else fillTime(hour, minute, second);
+		}
+		const designs = ['a', 'b', 'c', 'd', 'e', 'f', 'i', 'k', 'n', 'o', 'p', 'q'];
+
+		let d = 0;
+
+		const rundesign = () => {
+			design = designs[d % designs.length];
+
+			for(const design2 of designs){
+				const d = document.querySelector(`.${design2}`);
+				if(design === design2) {
+					d.classList.remove('nodp');
+				}
+				else{
+					d.classList.add('nodp');
+				}
+			}
+
+			run(design);
+			d++;
+		}
+
+		rundesign();
+	</script>
+</body>
+
+<style>
+	/* for error message */
+	.nodp{
+		display: none;
+	}
+	body{
+		color: white;
+		font-size: 20px;
+	}
+</style>
+
+</html>

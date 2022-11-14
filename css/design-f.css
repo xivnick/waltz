@@ -1,10 +1,10 @@
-#hours {
+.f #hours {
   top: calc(50% - (((100% - (6.25% - 0.9375rem + 1rem) * 2) / 8 - 0.875rem) * 2 + 1rem) / 2 - 1rem);
   left: calc(50% - (((100% - (6.25% - 0.9375rem + 1rem) * 2) / 8 - 0.875rem) * 2 + 1rem) / 2 - 1rem);
   width: calc(((100% - (6.25% - 0.9375rem + 1rem) * 2) / 8 - 0.875rem) * 2 + 1rem);
   height: calc(((100% - (6.25% - 0.9375rem + 1rem) * 2) / 8 - 0.875rem) * 2 + 1rem);
 }
-#hours .hour-box {
+.f #hours .hour-box {
   border-left: solid #fff 1rem;
   bottom: calc(50% - 0.5rem);
   left: calc(50% - 0.5rem);
@@ -13,43 +13,43 @@
   transform-origin: 0.5rem calc(100% - 0.5rem);
   overflow: hidden;
 }
-#hours .hour-box.rot-0 {
+.f #hours .hour-box.rot-0 {
   transform: rotate(0deg);
 }
-#hours .hour-box.rot-1 {
+.f #hours .hour-box.rot-1 {
   transform: rotate(30deg);
 }
-#hours .hour-box.rot-2 {
+.f #hours .hour-box.rot-2 {
   transform: rotate(60deg);
 }
-#hours .hour-box.rot-3 {
+.f #hours .hour-box.rot-3 {
   transform: rotate(90deg);
 }
-#hours .hour-box.rot-4 {
+.f #hours .hour-box.rot-4 {
   transform: rotate(120deg);
 }
-#hours .hour-box.rot-5 {
+.f #hours .hour-box.rot-5 {
   transform: rotate(150deg);
 }
-#hours .hour-box.rot-6 {
+.f #hours .hour-box.rot-6 {
   transform: rotate(180deg);
 }
-#hours .hour-box.rot-7 {
+.f #hours .hour-box.rot-7 {
   transform: rotate(210deg);
 }
-#hours .hour-box.rot-8 {
+.f #hours .hour-box.rot-8 {
   transform: rotate(240deg);
 }
-#hours .hour-box.rot-9 {
+.f #hours .hour-box.rot-9 {
   transform: rotate(270deg);
 }
-#hours .hour-box.rot-10 {
+.f #hours .hour-box.rot-10 {
   transform: rotate(300deg);
 }
-#hours .hour-box.rot-11 {
+.f #hours .hour-box.rot-11 {
   transform: rotate(330deg);
 }
-#hours .hour-box::after {
+.f #hours .hour-box::after {
   border: solid #fff 1rem;
   content: "";
   position: absolute;
@@ -61,198 +61,196 @@
   transform-origin: 0.5rem calc(100% - 0.5rem);
   background-color: #000;
 }
-#hours .hour-box.on::after {
+.f #hours .hour-box.on::after {
   background-color: var(--color-hour-0);
 }
-#hours .hour-box.on.color-0::after {
+.f #hours .hour-box.on.color-0::after {
   background-color: var(--color-hour-0);
 }
-#hours .hour-box.on.color-1::after {
+.f #hours .hour-box.on.color-1::after {
   background-color: var(--color-hour-1);
 }
-
-#minutes {
+.f #minutes {
   left: calc(0% + 6.25% - 0.9375rem);
   top: calc(0% + 6.25% - 0.9375rem);
   width: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
   height: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
 }
-#minutes .minute-box {
+.f #minutes .minute-box {
   border: solid #fff 1rem;
   transform: translate(-1rem, -1rem);
   width: calc(12.5% - 0.875rem);
   height: calc(12.5% - 0.875rem);
 }
-#minutes .minute-box.row-0 {
+.f #minutes .minute-box.row-0 {
   top: calc((12.5% - 0.875rem + 1rem) * 0);
 }
-#minutes .minute-box.row-1 {
+.f #minutes .minute-box.row-1 {
   top: calc((12.5% - 0.875rem + 1rem) * 1);
 }
-#minutes .minute-box.row-2 {
+.f #minutes .minute-box.row-2 {
   top: calc((12.5% - 0.875rem + 1rem) * 2);
 }
-#minutes .minute-box.row-3 {
+.f #minutes .minute-box.row-3 {
   top: calc((12.5% - 0.875rem + 1rem) * 3);
 }
-#minutes .minute-box.row-4 {
+.f #minutes .minute-box.row-4 {
   top: calc((12.5% - 0.875rem + 1rem) * 4);
 }
-#minutes .minute-box.row-5 {
+.f #minutes .minute-box.row-5 {
   top: calc((12.5% - 0.875rem + 1rem) * 5);
 }
-#minutes .minute-box.row-6 {
+.f #minutes .minute-box.row-6 {
   top: calc((12.5% - 0.875rem + 1rem) * 6);
 }
-#minutes .minute-box.row-7 {
+.f #minutes .minute-box.row-7 {
   top: calc((12.5% - 0.875rem + 1rem) * 7);
 }
-#minutes .minute-box.col-0 {
+.f #minutes .minute-box.col-0 {
   left: calc((12.5% - 0.875rem + 1rem) * 0);
 }
-#minutes .minute-box.col-1 {
+.f #minutes .minute-box.col-1 {
   left: calc((12.5% - 0.875rem + 1rem) * 1);
 }
-#minutes .minute-box.col-2 {
+.f #minutes .minute-box.col-2 {
   left: calc((12.5% - 0.875rem + 1rem) * 2);
 }
-#minutes .minute-box.col-3 {
+.f #minutes .minute-box.col-3 {
   left: calc((12.5% - 0.875rem + 1rem) * 3);
 }
-#minutes .minute-box.col-4 {
+.f #minutes .minute-box.col-4 {
   left: calc((12.5% - 0.875rem + 1rem) * 4);
 }
-#minutes .minute-box.col-5 {
+.f #minutes .minute-box.col-5 {
   left: calc((12.5% - 0.875rem + 1rem) * 5);
 }
-#minutes .minute-box.col-6 {
+.f #minutes .minute-box.col-6 {
   left: calc((12.5% - 0.875rem + 1rem) * 6);
 }
-#minutes .minute-box.col-7 {
+.f #minutes .minute-box.col-7 {
   left: calc((12.5% - 0.875rem + 1rem) * 7);
 }
-#minutes .minute-box.on.color-0 {
+.f #minutes .minute-box.on.color-0 {
   background-color: var(--color-minute-0);
 }
-#minutes .minute-box.on.color-1 {
+.f #minutes .minute-box.on.color-1 {
   background-color: var(--color-minute-1);
 }
-
-#seconds {
+.f #seconds {
   top: calc(0% - 1rem);
   left: calc(0% - 1rem);
   width: 100%;
   height: 100%;
 }
-#seconds .second-box {
+.f #seconds .second-box {
   border: solid #fff 1rem;
   width: calc(6.25% - 0.9375rem);
   height: calc(6.25% - 0.9375rem);
   background-color: #000;
 }
-#seconds .second-box.row-0 {
+.f #seconds .second-box.row-0 {
   top: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
 }
-#seconds .second-box.col-0 {
+.f #seconds .second-box.col-0 {
   left: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
 }
-#seconds .second-box.row-1 {
+.f #seconds .second-box.row-1 {
   top: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
 }
-#seconds .second-box.col-1 {
+.f #seconds .second-box.col-1 {
   left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
 }
-#seconds .second-box.row-2 {
+.f #seconds .second-box.row-2 {
   top: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
 }
-#seconds .second-box.col-2 {
+.f #seconds .second-box.col-2 {
   left: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
 }
-#seconds .second-box.row-3 {
+.f #seconds .second-box.row-3 {
   top: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
 }
-#seconds .second-box.col-3 {
+.f #seconds .second-box.col-3 {
   left: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
 }
-#seconds .second-box.row-4 {
+.f #seconds .second-box.row-4 {
   top: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
 }
-#seconds .second-box.col-4 {
+.f #seconds .second-box.col-4 {
   left: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
 }
-#seconds .second-box.row-5 {
+.f #seconds .second-box.row-5 {
   top: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
 }
-#seconds .second-box.col-5 {
+.f #seconds .second-box.col-5 {
   left: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
 }
-#seconds .second-box.row-6 {
+.f #seconds .second-box.row-6 {
   top: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
 }
-#seconds .second-box.col-6 {
+.f #seconds .second-box.col-6 {
   left: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
 }
-#seconds .second-box.row-7 {
+.f #seconds .second-box.row-7 {
   top: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
 }
-#seconds .second-box.col-7 {
+.f #seconds .second-box.col-7 {
   left: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
 }
-#seconds .second-box.row-8 {
+.f #seconds .second-box.row-8 {
   top: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
 }
-#seconds .second-box.col-8 {
+.f #seconds .second-box.col-8 {
   left: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
 }
-#seconds .second-box.row-9 {
+.f #seconds .second-box.row-9 {
   top: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
 }
-#seconds .second-box.col-9 {
+.f #seconds .second-box.col-9 {
   left: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
 }
-#seconds .second-box.row-10 {
+.f #seconds .second-box.row-10 {
   top: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
 }
-#seconds .second-box.col-10 {
+.f #seconds .second-box.col-10 {
   left: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
 }
-#seconds .second-box.row-11 {
+.f #seconds .second-box.row-11 {
   top: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
 }
-#seconds .second-box.col-11 {
+.f #seconds .second-box.col-11 {
   left: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
 }
-#seconds .second-box.row-12 {
+.f #seconds .second-box.row-12 {
   top: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
 }
-#seconds .second-box.col-12 {
+.f #seconds .second-box.col-12 {
   left: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
 }
-#seconds .second-box.row-13 {
+.f #seconds .second-box.row-13 {
   top: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
 }
-#seconds .second-box.col-13 {
+.f #seconds .second-box.col-13 {
   left: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
 }
-#seconds .second-box.row-14 {
+.f #seconds .second-box.row-14 {
   top: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
 }
-#seconds .second-box.col-14 {
+.f #seconds .second-box.col-14 {
   left: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
 }
-#seconds .second-box.row-15 {
+.f #seconds .second-box.row-15 {
   top: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
 }
-#seconds .second-box.col-15 {
+.f #seconds .second-box.col-15 {
   left: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
 }
-#seconds .second-box.on {
+.f #seconds .second-box.on {
   background-color: var(--color-second-0);
 }
-#seconds .second-box.on.color-0 {
+.f #seconds .second-box.on.color-0 {
   background-color: var(--color-second-0);
 }
-#seconds .second-box.on.color-1 {
+.f #seconds .second-box.on.color-1 {
   background-color: var(--color-second-1);
 }
 

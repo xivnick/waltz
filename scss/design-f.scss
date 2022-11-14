@@ -1,7 +1,7 @@
 
 @import "_variables.scss";
 
-
+.f{
 #hours {
 	@include center-square( calc( sizing(8, calc(100% - sizing-border(16) * 2)) * 2 + $border-width) );
 
@@ -64,4 +64,5 @@
 	}
 
 
+}
 }

@@ -1,234 +1,232 @@
-#hours {
+.b #hours {
   left: calc(0% + 6.25% - 0.9375rem);
   top: calc(0% + 6.25% - 0.9375rem);
   width: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
   height: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
 }
-#hours .hour-box {
+.b #hours .hour-box {
   border: solid #fff 1rem;
   transform: translate(-1rem, -1rem);
   width: calc(9.0909090909% - 0.9090909091rem);
   height: calc(50% - 0.5rem);
 }
-#hours .hour-box.row-0 {
+.b #hours .hour-box.row-0 {
   top: calc((50% - 0.5rem + 1rem) * 0);
 }
-#hours .hour-box.row-1 {
+.b #hours .hour-box.row-1 {
   top: calc((50% - 0.5rem + 1rem) * 1);
 }
-#hours .hour-box.col-0 {
+.b #hours .hour-box.col-0 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 0);
 }
-#hours .hour-box.col-1 {
+.b #hours .hour-box.col-1 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 2);
 }
-#hours .hour-box.col-2 {
+.b #hours .hour-box.col-2 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 4);
 }
-#hours .hour-box.col-3 {
+.b #hours .hour-box.col-3 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 6);
 }
-#hours .hour-box.col-4 {
+.b #hours .hour-box.col-4 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 8);
 }
-#hours .hour-box.col-5 {
+.b #hours .hour-box.col-5 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 10);
 }
-#hours .hour-box.on {
+.b #hours .hour-box.on {
   background-color: var(--color-hour-0);
 }
-
-#minutes {
+.b #minutes {
   left: calc(0% + 6.25% - 0.9375rem);
   top: calc(0% + 6.25% - 0.9375rem);
   width: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
   height: calc(100% - (6.25% - 0.9375rem) * 2 - 2rem);
 }
-#minutes .minute-box {
+.b #minutes .minute-box {
   border: solid #fff 1rem;
   transform: translate(-1rem, -1rem);
   width: calc(9.0909090909% - 0.9090909091rem);
   height: calc(8.3333333333% - 0.9166666667rem);
 }
-#minutes .minute-box.row-0 {
+.b #minutes .minute-box.row-0 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 0);
 }
-#minutes .minute-box.row-1 {
+.b #minutes .minute-box.row-1 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 1);
 }
-#minutes .minute-box.row-2 {
+.b #minutes .minute-box.row-2 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 2);
 }
-#minutes .minute-box.row-3 {
+.b #minutes .minute-box.row-3 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 3);
 }
-#minutes .minute-box.row-4 {
+.b #minutes .minute-box.row-4 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 4);
 }
-#minutes .minute-box.row-5 {
+.b #minutes .minute-box.row-5 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 5);
 }
-#minutes .minute-box.row-6 {
+.b #minutes .minute-box.row-6 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 6);
 }
-#minutes .minute-box.row-7 {
+.b #minutes .minute-box.row-7 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 7);
 }
-#minutes .minute-box.row-8 {
+.b #minutes .minute-box.row-8 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 8);
 }
-#minutes .minute-box.row-9 {
+.b #minutes .minute-box.row-9 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 9);
 }
-#minutes .minute-box.row-10 {
+.b #minutes .minute-box.row-10 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 10);
 }
-#minutes .minute-box.row-11 {
+.b #minutes .minute-box.row-11 {
   top: calc((8.3333333333% - 0.9166666667rem + 1rem) * 11);
 }
-#minutes .minute-box.col-0 {
+.b #minutes .minute-box.col-0 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 1);
 }
-#minutes .minute-box.col-1 {
+.b #minutes .minute-box.col-1 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 3);
 }
-#minutes .minute-box.col-2 {
+.b #minutes .minute-box.col-2 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 5);
 }
-#minutes .minute-box.col-3 {
+.b #minutes .minute-box.col-3 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 7);
 }
-#minutes .minute-box.col-4 {
+.b #minutes .minute-box.col-4 {
   left: calc((9.0909090909% - 0.9090909091rem + 1rem) * 9);
 }
-#minutes .minute-box.on.color-0 {
+.b #minutes .minute-box.on.color-0 {
   background-color: var(--color-minute-0);
 }
-#minutes .minute-box.on.color-1 {
+.b #minutes .minute-box.on.color-1 {
   background-color: var(--color-minute-1);
 }
-#minutes .minute-box.on.color-2 {
+.b #minutes .minute-box.on.color-2 {
   background-color: var(--color-minute-2);
 }
-#minutes .minute-box.on.color-3 {
+.b #minutes .minute-box.on.color-3 {
   background-color: var(--color-minute-3);
 }
-#minutes .minute-box.on.color-4 {
+.b #minutes .minute-box.on.color-4 {
   background-color: var(--color-minute-4);
 }
-#minutes .minute-box.on.color-5 {
+.b #minutes .minute-box.on.color-5 {
   background-color: var(--color-minute-5);
 }
-
-#seconds {
+.b #seconds {
   top: calc(0% - 1rem);
   left: calc(0% - 1rem);
   width: 100%;
   height: 100%;
 }
-#seconds .second-box {
+.b #seconds .second-box {
   border: solid #fff 1rem;
   width: calc(6.25% - 0.9375rem);
   height: calc(6.25% - 0.9375rem);
   background-color: #000;
 }
-#seconds .second-box.row-0 {
+.b #seconds .second-box.row-0 {
   top: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
 }
-#seconds .second-box.col-0 {
+.b #seconds .second-box.col-0 {
   left: calc((6.25% - 0.9375rem + 1rem) * 0 - 1rem);
 }
-#seconds .second-box.row-1 {
+.b #seconds .second-box.row-1 {
   top: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
 }
-#seconds .second-box.col-1 {
+.b #seconds .second-box.col-1 {
   left: calc((6.25% - 0.9375rem + 1rem) * 1 - 1rem);
 }
-#seconds .second-box.row-2 {
+.b #seconds .second-box.row-2 {
   top: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
 }
-#seconds .second-box.col-2 {
+.b #seconds .second-box.col-2 {
   left: calc((6.25% - 0.9375rem + 1rem) * 2 - 1rem);
 }
-#seconds .second-box.row-3 {
+.b #seconds .second-box.row-3 {
   top: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
 }
-#seconds .second-box.col-3 {
+.b #seconds .second-box.col-3 {
   left: calc((6.25% - 0.9375rem + 1rem) * 3 - 1rem);
 }
-#seconds .second-box.row-4 {
+.b #seconds .second-box.row-4 {
   top: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
 }
-#seconds .second-box.col-4 {
+.b #seconds .second-box.col-4 {
   left: calc((6.25% - 0.9375rem + 1rem) * 4 - 1rem);
 }
-#seconds .second-box.row-5 {
+.b #seconds .second-box.row-5 {
   top: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
 }
-#seconds .second-box.col-5 {
+.b #seconds .second-box.col-5 {
   left: calc((6.25% - 0.9375rem + 1rem) * 5 - 1rem);
 }
-#seconds .second-box.row-6 {
+.b #seconds .second-box.row-6 {
   top: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
 }
-#seconds .second-box.col-6 {
+.b #seconds .second-box.col-6 {
   left: calc((6.25% - 0.9375rem + 1rem) * 6 - 1rem);
 }
-#seconds .second-box.row-7 {
+.b #seconds .second-box.row-7 {
   top: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
 }
-#seconds .second-box.col-7 {
+.b #seconds .second-box.col-7 {
   left: calc((6.25% - 0.9375rem + 1rem) * 7 - 1rem);
 }
-#seconds .second-box.row-8 {
+.b #seconds .second-box.row-8 {
   top: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
 }
-#seconds .second-box.col-8 {
+.b #seconds .second-box.col-8 {
   left: calc((6.25% - 0.9375rem + 1rem) * 8 - 1rem);
 }
-#seconds .second-box.row-9 {
+.b #seconds .second-box.row-9 {
   top: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
 }
-#seconds .second-box.col-9 {
+.b #seconds .second-box.col-9 {
   left: calc((6.25% - 0.9375rem + 1rem) * 9 - 1rem);
 }
-#seconds .second-box.row-10 {
+.b #seconds .second-box.row-10 {
   top: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
 }
-#seconds .second-box.col-10 {
+.b #seconds .second-box.col-10 {
   left: calc((6.25% - 0.9375rem + 1rem) * 10 - 1rem);
 }
-#seconds .second-box.row-11 {
+.b #seconds .second-box.row-11 {
   top: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
 }
-#seconds .second-box.col-11 {
+.b #seconds .second-box.col-11 {
   left: calc((6.25% - 0.9375rem + 1rem) * 11 - 1rem);
 }
-#seconds .second-box.row-12 {
+.b #seconds .second-box.row-12 {
   top: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
 }
-#seconds .second-box.col-12 {
+.b #seconds .second-box.col-12 {
   left: calc((6.25% - 0.9375rem + 1rem) * 12 - 1rem);
 }
-#seconds .second-box.row-13 {
+.b #seconds .second-box.row-13 {
   top: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
 }
-#seconds .second-box.col-13 {
+.b #seconds .second-box.col-13 {
   left: calc((6.25% - 0.9375rem + 1rem) * 13 - 1rem);
 }
-#seconds .second-box.row-14 {
+.b #seconds .second-box.row-14 {
   top: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
 }
-#seconds .second-box.col-14 {
+.b #seconds .second-box.col-14 {
   left: calc((6.25% - 0.9375rem + 1rem) * 14 - 1rem);
 }
-#seconds .second-box.row-15 {
+.b #seconds .second-box.row-15 {
   top: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
 }
-#seconds .second-box.col-15 {
+.b #seconds .second-box.col-15 {
   left: calc((6.25% - 0.9375rem + 1rem) * 15 - 1rem);
 }
-#seconds .second-box.on {
+.b #seconds .second-box.on {
   background-color: var(--color-second-0);
 }
 

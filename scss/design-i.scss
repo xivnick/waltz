@@ -1,6 +1,7 @@
 
 @import "_variables.scss";
 
+.i{
 #hours {
 
 	@include inner-border;
@@ -103,4 +104,5 @@
 
 	}
 
+}
 }

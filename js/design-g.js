@@ -1,7 +1,8 @@
 
-const hours = document.querySelector('#hours');
-const minutes = document.querySelector('#minutes');
-const seconds = document.querySelector('#seconds');
+(() => {
+const hours = document.querySelector('.g #hours');
+const minutes = document.querySelector('.g #minutes');
+const seconds = document.querySelector('.g #seconds');
 
 for(let i = 0; i < 6; i++){
 	hours.innerHTML += `<div class="hour-back rot-${i}"><div class="triangle"></div>`;	
@@ -34,3 +35,4 @@ const second_data = [
 for(let d of second_data){
 	seconds.innerHTML += `<div class="second-box row-${d[0]} col-${d[1]}"></div>`;
 }
+})();

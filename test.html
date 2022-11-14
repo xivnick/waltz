@@ -4,9 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>waltz TEST</title>
-
-	<!-- <link rel="stylesheet" href="https://use.typekit.net/fbc4vah.css"> -->
-
 	<link rel="stylesheet" type="text/css" href="css/frame.css">
 	<link rel="stylesheet" type="text/css" href="css/color/color-a2.css">
 	<link rel="stylesheet" type="text/css" href="css/design-a.css">
@@ -14,7 +11,7 @@
 <body>
 	<div id="frame-wrapper">
 		<div id="frame">
-			<div id="design">
+			<div id="design" class="a b c d e f g h i j k l m n o p q r s t u v w x y z">
 				<div id="hours"></div>
 				<div id="minutes"></div>
 				<div id="seconds"></div>
@@ -28,45 +25,11 @@
 	</div>
 	<script type="text/javascript" src="js/design-a.js"></script>
 	<script type="text/javascript" src="js/movement.js"></script>
+	<script type="text/javascript" src="js/generation.js"></script>
 </body>
 
-<script type="text/javascript">
-
-	const divs = document.querySelectorAll('.hour-box, .minute-box, .second-box');
-	const hidden = [];
-
-	const init = () => {
-		for(let div of divs) {
-			div.classList.add('hidden');
-		}
-
-		for(let i = 0; i < divs.length; i++){
-			hidden.push(i);
-		}
-	}
-
-	const structure = () => {
-
-		const sel = Math.floor(Math.random() * hidden.length);
-		const idx = hidden[sel];
-		divs[idx].classList.remove('hidden');
-
-		hidden.splice(sel, 1);
-
-		if(hidden.length === 0) return;
-
-		setTimeout(() => structure(), 20);
-	} 
-
-	init();
-	structure();
-</script>
-
 <style>
-	.hidden, .hidden::after{
-		visibility: hidden;
-	}
-
+	/* for error message */
 	body{
 		color: white;
 		font-size: 20px;

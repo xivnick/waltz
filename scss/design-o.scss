@@ -1,6 +1,7 @@
 
 @import "_variables.scss";
 
+.o {
 #hours {
 
 	@include center-square();
@@ -92,5 +93,5 @@
 		}
 
 	}
-
+}
 }
